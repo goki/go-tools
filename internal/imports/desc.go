@@ -37,13 +37,13 @@ func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *Pro
 				tv := strings.TrimPrefix(field.Tag.Value, "`")
 				tv = strings.TrimSuffix(tv, "`")
 				rst := reflect.StructTag(tv)
-				desc, ok := rst.Lookup("desc")
-				if ok {
+				comment := structTagStrings(rst, "view", "def", "min") + rst.Get("desc")
+				if comment != "" {
 					field.Doc = &ast.CommentGroup{
 						List: []*ast.Comment{
 							{
 								Slash: field.Pos() - 1,
-								Text:  "// " + desc,
+								Text:  "// " + comment,
 							},
 						},
 					}
@@ -55,4 +55,25 @@ func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *Pro
 	})
 	f.Comments = cm.Comments()
 	return nil
+}
+
+// structTagString returns a string appropriate for use
+// in a comment of the form [key: value] for the given struct tag
+// key in the given struct tag set. If the key is not found, "" is returned.
+func structTagString(structTag reflect.StructTag, key string) string {
+	val, ok := structTag.Lookup(key)
+	if !ok {
+		return ""
+	}
+	return "[" + key + ":" + val + "] "
+}
+
+// structTagStrings is a helper funtion that calls [structTagString] on the
+// given keys and returns the results as one string
+func structTagStrings(structTag reflect.StructTag, keys ...string) string {
+	res := ""
+	for _, key := range keys {
+		res += structTagString(structTag, key)
+	}
+	return res
 }
