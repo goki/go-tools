@@ -5,10 +5,10 @@
 package imports
 
 import (
-	"fmt"
 	"go/ast"
 	"go/token"
 	"reflect"
+	"strings"
 )
 
 // This file modifies the fixImports function to also
@@ -26,28 +26,33 @@ func init() {
 
 // addDescComments adds a comment to all struct fields with a 'desc' tag.
 func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *ProcessEnv) error {
+	cm := ast.NewCommentMap(fset, f, f.Comments)
 	ast.Inspect(f, func(n ast.Node) bool {
 		if st, ok := n.(*ast.StructType); ok {
 			for _, field := range st.Fields.List {
 				if field.Tag == nil {
 					continue
 				}
-				rst := reflect.StructTag(field.Tag.Value)
+				// need to get rid of backquotes around tag value
+				tv := strings.TrimPrefix(field.Tag.Value, "`")
+				tv = strings.TrimSuffix(tv, "`")
+				rst := reflect.StructTag(tv)
 				desc, ok := rst.Lookup("desc")
 				if ok {
-					fmt.Println(desc)
 					field.Comment = &ast.CommentGroup{
 						List: []*ast.Comment{
 							{
 								Slash: field.End(),
-								Text:  desc,
+								Text:  "// " + desc,
 							},
 						},
 					}
+					cm[field] = []*ast.CommentGroup{field.Comment}
 				}
 			}
 		}
 		return true
 	})
+	f.Comments = cm.Comments()
 	return nil
 }
