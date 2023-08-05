@@ -39,15 +39,15 @@ func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *Pro
 				rst := reflect.StructTag(tv)
 				desc, ok := rst.Lookup("desc")
 				if ok {
-					field.Comment = &ast.CommentGroup{
+					field.Doc = &ast.CommentGroup{
 						List: []*ast.Comment{
 							{
-								Slash: field.End(),
+								Slash: field.Pos() - 1,
 								Text:  "// " + desc,
 							},
 						},
 					}
-					cm[field] = []*ast.CommentGroup{field.Comment}
+					cm[field] = []*ast.CommentGroup{field.Doc}
 				}
 			}
 		}
