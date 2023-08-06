@@ -37,7 +37,7 @@ func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *Pro
 				tv := strings.TrimPrefix(field.Tag.Value, "`")
 				tv = strings.TrimSuffix(tv, "`")
 				rst := reflect.StructTag(tv)
-				comment := structTagStrings(rst, "view", "def", "min") + rst.Get("desc")
+				comment := structTagStrings(rst, "def", "view", "viewif", "tableview", "min", "max", "step") + rst.Get("desc")
 				if comment != "" {
 					field.Doc = &ast.CommentGroup{
 						List: []*ast.Comment{
@@ -65,7 +65,7 @@ func structTagString(structTag reflect.StructTag, key string) string {
 	if !ok {
 		return ""
 	}
-	return "[" + key + ":" + val + "] "
+	return "[" + key + ": " + val + "] "
 }
 
 // structTagStrings is a helper funtion that calls [structTagString] on the
