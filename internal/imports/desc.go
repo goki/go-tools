@@ -39,15 +39,20 @@ func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *Pro
 				rst := reflect.StructTag(tv)
 				comment := structTagStrings(rst, "def", "view", "viewif", "tableview", "min", "max", "step") + rst.Get("desc")
 				if comment != "" {
-					field.Doc = &ast.CommentGroup{
-						List: []*ast.Comment{
-							{
-								Slash: field.Pos() - 1,
-								Text:  "// " + comment,
-							},
-						},
+					if field.Doc == nil {
+						field.Doc = &ast.CommentGroup{}
 					}
-					cm[field] = []*ast.CommentGroup{field.Doc}
+					if len(field.Doc.List) < 1 {
+						field.Doc.List = make([]*ast.Comment, 1)
+					}
+					field.Doc.List[len(field.Doc.List)-1] = &ast.Comment{
+						Slash: field.Pos() - 1,
+						Text:  "// " + comment,
+					}
+					if cm[field] == nil {
+						cm[field] = make([]*ast.CommentGroup, 1)
+					}
+					cm[field][len(cm[field])-1] = field.Doc
 				}
 			}
 		}
