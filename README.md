@@ -1,5 +1,7 @@
 # Go Tools
 
+**IMPORTANT:** Please see https://goki.dev/docs/general/structfieldcomments/ for information about this repository.
+
 [![PkgGoDev](https://pkg.go.dev/badge/golang.org/x/tools)](https://pkg.go.dev/golang.org/x/tools)
 
 This repository provides the `golang.org/x/tools` module, comprising
