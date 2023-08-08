@@ -13,9 +13,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
-	"github.com/goki/go-tools-tools/internal/event"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/internal/event"
 )
 
 func Completion(ctx context.Context, snapshot source.Snapshot, fh source.FileHandle, position protocol.Position) (*protocol.CompletionList, error) {

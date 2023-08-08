@@ -17,11 +17,11 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/source/completion"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/tests/compare"
-	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/gopls/internal/lsp/source/completion"
+	"golang.org/x/tools/gopls/internal/lsp/tests/compare"
+	"golang.org/x/tools/gopls/internal/span"
 )
 
 var builtins = map[string]bool{

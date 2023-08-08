@@ -9,8 +9,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/glob"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/glob"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
 )
 
 // ClientHooks are a set of optional hooks called during handling of

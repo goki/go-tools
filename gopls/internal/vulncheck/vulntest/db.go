@@ -20,8 +20,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goki/go-tools/gopls/internal/span"
-	"github.com/goki/go-tools-tools/txtar"
+	"golang.org/x/tools/gopls/internal/span"
+	"golang.org/x/tools/txtar"
 	"golang.org/x/vuln/client"
 	"golang.org/x/vuln/osv"
 )

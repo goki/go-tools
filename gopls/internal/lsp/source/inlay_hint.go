@@ -13,9 +13,9 @@ import (
 	"go/types"
 	"strings"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/internal/event"
-	"github.com/goki/go-tools-tools/internal/typeparams"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/internal/event"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 const (

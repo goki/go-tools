@@ -7,9 +7,9 @@ package unmarshal_test
 import (
 	"testing"
 
-	"github.com/goki/go-tools/go/analysis/analysistest"
-	"github.com/goki/go-tools-tools/go/analysis/passes/unmarshal"
-	"github.com/goki/go-tools-tools/internal/typeparams"
+	"golang.org/x/tools/go/analysis/analysistest"
+	"golang.org/x/tools/go/analysis/passes/unmarshal"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 func Test(t *testing.T) {

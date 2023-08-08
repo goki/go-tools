@@ -13,8 +13,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/internal/typeparams"
-	. "github.com/goki/go-tools-tools/internal/typeparams"
+	"golang.org/x/tools/internal/typeparams"
+	. "golang.org/x/tools/internal/typeparams"
 )
 
 func TestStructuralTerms(t *testing.T) {

@@ -7,9 +7,9 @@ package misc
 import (
 	"testing"
 
-	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
+	. "golang.org/x/tools/gopls/internal/lsp/regtest"
 
-	"github.com/goki/go-tools-tools/internal/testenv"
+	"golang.org/x/tools/internal/testenv"
 )
 
 // Test that enabling and disabling produces the expected results of showing

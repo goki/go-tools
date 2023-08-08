@@ -11,8 +11,8 @@ import (
 	"go/types"
 	"strings"
 
-	"github.com/goki/go-tools/go/ast/inspector"
-	"github.com/goki/go-tools-tools/internal/typeparams"
+	"golang.org/x/tools/go/ast/inspector"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // Features is a set of flags reporting which features of generic Go code a

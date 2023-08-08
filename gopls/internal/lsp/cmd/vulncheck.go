@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/goki/go-tools/go/packages"
-	vulnchecklib "github.com/goki/go-tools-tools/gopls/internal/vulncheck"
-	"github.com/goki/go-tools-tools/internal/tool"
+	"golang.org/x/tools/go/packages"
+	vulnchecklib "golang.org/x/tools/gopls/internal/vulncheck"
+	"golang.org/x/tools/internal/tool"
 )
 
 // vulncheck implements the vulncheck command.
@@ -45,7 +45,7 @@ func (v *vulncheck) DetailedHelp(f *flag.FlagSet) {
 	WARNING: this command is experimental.
 
 	By default, the command outputs a JSON-encoded
-	github.com/goki/go-tools-tools/gopls/internal/lsp/command.VulncheckResult
+	golang.org/x/tools/gopls/internal/lsp/command.VulncheckResult
 	message.
 	Example:
 	$ gopls vulncheck <packages>

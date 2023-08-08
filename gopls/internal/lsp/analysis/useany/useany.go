@@ -12,10 +12,10 @@ import (
 	"go/token"
 	"go/types"
 
-	"github.com/goki/go-tools/go/analysis"
-	"github.com/goki/go-tools-tools/go/analysis/passes/inspect"
-	"github.com/goki/go-tools-tools/go/ast/inspector"
-	"github.com/goki/go-tools-tools/internal/typeparams"
+	"golang.org/x/tools/go/analysis"
+	"golang.org/x/tools/go/analysis/passes/inspect"
+	"golang.org/x/tools/go/ast/inspector"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 const Doc = `check for constraints that could be simplified to "any"`

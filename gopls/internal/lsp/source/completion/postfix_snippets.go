@@ -16,12 +16,12 @@ import (
 	"sync"
 	"text/template"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/safetoken"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/snippet"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
-	"github.com/goki/go-tools-tools/internal/event"
-	"github.com/goki/go-tools-tools/internal/imports"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/safetoken"
+	"golang.org/x/tools/gopls/internal/lsp/snippet"
+	"golang.org/x/tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/internal/event"
+	"golang.org/x/tools/internal/imports"
 )
 
 // Postfix snippets are artificial methods that allow the user to

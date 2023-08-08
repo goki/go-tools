@@ -18,11 +18,11 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/safetoken"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
-	"github.com/goki/go-tools-tools/gopls/internal/span"
-	"github.com/goki/go-tools-tools/internal/fuzzy"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/safetoken"
+	"golang.org/x/tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/gopls/internal/span"
+	"golang.org/x/tools/internal/fuzzy"
 )
 
 // packageClauseCompletions offers completions for a package declaration when

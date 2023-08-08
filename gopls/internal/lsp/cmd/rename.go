@@ -13,11 +13,11 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
-	"github.com/goki/go-tools-tools/gopls/internal/span"
-	"github.com/goki/go-tools-tools/internal/diff"
-	"github.com/goki/go-tools-tools/internal/tool"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/gopls/internal/span"
+	"golang.org/x/tools/internal/diff"
+	"golang.org/x/tools/internal/tool"
 )
 
 // rename implements the rename verb for gopls.

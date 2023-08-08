@@ -23,8 +23,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/goki/go-tools/go/buildutil"
-	"github.com/goki/go-tools-tools/go/loader"
+	"golang.org/x/tools/go/buildutil"
+	"golang.org/x/tools/go/loader"
 )
 
 // A spec specifies an entity to rename.

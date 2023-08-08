@@ -16,10 +16,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/goki/go-tools/internal/event"
-	"github.com/goki/go-tools-tools/internal/event/core"
-	"github.com/goki/go-tools-tools/internal/event/export"
-	"github.com/goki/go-tools-tools/internal/event/label"
+	"golang.org/x/tools/internal/event"
+	"golang.org/x/tools/internal/event/core"
+	"golang.org/x/tools/internal/event/export"
+	"golang.org/x/tools/internal/event/label"
 )
 
 // TraceTmpl extends BaseTemplate and renders a TraceResults, e.g. from getData().

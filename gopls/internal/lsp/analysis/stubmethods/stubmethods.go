@@ -14,10 +14,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/goki/go-tools/go/analysis"
-	"github.com/goki/go-tools-tools/go/ast/astutil"
-	"github.com/goki/go-tools-tools/internal/analysisinternal"
-	"github.com/goki/go-tools-tools/internal/typesinternal"
+	"golang.org/x/tools/go/analysis"
+	"golang.org/x/tools/go/ast/astutil"
+	"golang.org/x/tools/internal/analysisinternal"
+	"golang.org/x/tools/internal/typesinternal"
 )
 
 const Doc = `stub methods analyzer

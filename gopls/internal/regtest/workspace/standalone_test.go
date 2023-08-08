@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	. "github.com/goki/go-tools-tools/gopls/internal/lsp/regtest"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	. "golang.org/x/tools/gopls/internal/lsp/regtest"
 )
 
 func TestStandaloneFiles(t *testing.T) {

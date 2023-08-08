@@ -17,8 +17,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/fake"
-	. "github.com/goki/go-tools-tools/gopls/internal/lsp/regtest"
+	"golang.org/x/tools/gopls/internal/lsp/fake"
+	. "golang.org/x/tools/gopls/internal/lsp/regtest"
 )
 
 // repos holds shared repositories for use in benchmarks.

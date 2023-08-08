@@ -12,9 +12,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/goki/go-tools/go/packages"
-	"github.com/goki/go-tools-tools/gopls/internal/astutil"
-	"github.com/goki/go-tools-tools/internal/testenv"
+	"golang.org/x/tools/go/packages"
+	"golang.org/x/tools/gopls/internal/astutil"
+	"golang.org/x/tools/internal/testenv"
 )
 
 // TestPurgeFuncBodies tests PurgeFuncBodies by comparing it against a

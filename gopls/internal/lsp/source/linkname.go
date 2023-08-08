@@ -11,9 +11,9 @@ import (
 	"go/token"
 	"strings"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/safetoken"
-	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/safetoken"
+	"golang.org/x/tools/gopls/internal/span"
 )
 
 // ErrNoLinkname is returned by LinknameDefinition when no linkname

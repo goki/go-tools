@@ -8,8 +8,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/goki/go-tools/internal/gocommand"
-	"github.com/goki/go-tools-tools/internal/testenv"
+	"golang.org/x/tools/internal/gocommand"
+	"golang.org/x/tools/internal/testenv"
 )
 
 func TestGoVersion(t *testing.T) {

@@ -8,8 +8,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	. "github.com/goki/go-tools-tools/gopls/internal/lsp/regtest"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	. "golang.org/x/tools/gopls/internal/lsp/regtest"
 )
 
 func TestWorkspacePackageHighlight(t *testing.T) {

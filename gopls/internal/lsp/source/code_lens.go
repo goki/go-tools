@@ -13,9 +13,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/command"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"golang.org/x/tools/gopls/internal/lsp/command"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/span"
 )
 
 type LensFunc func(context.Context, Snapshot, FileHandle) ([]protocol.CodeLens, error)

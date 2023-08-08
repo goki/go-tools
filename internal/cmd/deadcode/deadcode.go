@@ -18,10 +18,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/goki/go-tools/go/callgraph/rta"
-	"github.com/goki/go-tools-tools/go/packages"
-	"github.com/goki/go-tools-tools/go/ssa"
-	"github.com/goki/go-tools-tools/go/ssa/ssautil"
+	"golang.org/x/tools/go/callgraph/rta"
+	"golang.org/x/tools/go/packages"
+	"golang.org/x/tools/go/ssa"
+	"golang.org/x/tools/go/ssa/ssautil"
 )
 
 //go:embed doc.go

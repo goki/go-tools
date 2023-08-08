@@ -12,10 +12,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/goki/go-tools/gopls/internal/lsp"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/cache"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/internal/testenv"
+	"golang.org/x/tools/gopls/internal/lsp"
+	"golang.org/x/tools/gopls/internal/lsp/cache"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/internal/testenv"
 )
 
 // TestCapabilities does some minimal validation of the server's adherence to the LSP.

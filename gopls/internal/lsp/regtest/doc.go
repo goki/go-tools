@@ -29,8 +29,8 @@
 //		"fmt"
 //		"testing"
 //
-//		"github.com/goki/go-tools/gopls/internal/hooks"
-//		. "github.com/goki/go-tools-tools/gopls/internal/lsp/regtest"
+//		"golang.org/x/tools/gopls/internal/hooks"
+//		. "golang.org/x/tools/gopls/internal/lsp/regtest"
 //	)
 //
 //	func TestMain(m *testing.M) {

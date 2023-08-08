@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"testing"
 
-	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/tests/compare"
+	. "golang.org/x/tools/gopls/internal/lsp/regtest"
+	"golang.org/x/tools/gopls/internal/lsp/tests/compare"
 )
 
 // Test for golang/go#57081.

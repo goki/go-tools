@@ -11,11 +11,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/source"
-	"github.com/goki/go-tools-tools/internal/event"
-	"github.com/goki/go-tools-tools/internal/gocommand"
-	"github.com/goki/go-tools-tools/internal/memoize"
-	"github.com/goki/go-tools-tools/internal/robustio"
+	"golang.org/x/tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/internal/event"
+	"golang.org/x/tools/internal/gocommand"
+	"golang.org/x/tools/internal/memoize"
+	"golang.org/x/tools/internal/robustio"
 )
 
 // New Creates a new cache for gopls operation results, using the given file

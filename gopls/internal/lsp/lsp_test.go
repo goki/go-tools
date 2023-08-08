@@ -15,16 +15,16 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/goki/go-tools/gopls/internal/bug"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/cache"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/command"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/debug"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/tests"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/tests/compare"
-	"github.com/goki/go-tools-tools/gopls/internal/span"
-	"github.com/goki/go-tools-tools/internal/testenv"
+	"golang.org/x/tools/gopls/internal/bug"
+	"golang.org/x/tools/gopls/internal/lsp/cache"
+	"golang.org/x/tools/gopls/internal/lsp/command"
+	"golang.org/x/tools/gopls/internal/lsp/debug"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/gopls/internal/lsp/tests"
+	"golang.org/x/tools/gopls/internal/lsp/tests/compare"
+	"golang.org/x/tools/gopls/internal/span"
+	"golang.org/x/tools/internal/testenv"
 )
 
 func TestMain(m *testing.M) {

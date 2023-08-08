@@ -18,8 +18,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/goki/go-tools/go/analysis"
-	"github.com/goki/go-tools-tools/go/analysis/passes/internal/analysisutil"
+	"golang.org/x/tools/go/analysis"
+	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
 )
 
 const Doc = "report mismatches between assembly files and Go declarations"
@@ -27,7 +27,7 @@ const Doc = "report mismatches between assembly files and Go declarations"
 var Analyzer = &analysis.Analyzer{
 	Name: "asmdecl",
 	Doc:  Doc,
-	URL:  "https://pkg.go.dev/github.com/goki/go-tools-tools/go/analysis/passes/asmdecl",
+	URL:  "https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/asmdecl",
 	Run:  run,
 }
 

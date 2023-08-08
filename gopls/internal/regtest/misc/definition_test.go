@@ -11,9 +11,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	. "github.com/goki/go-tools-tools/gopls/internal/lsp/regtest"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/tests/compare"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	. "golang.org/x/tools/gopls/internal/lsp/regtest"
+	"golang.org/x/tools/gopls/internal/lsp/tests/compare"
 )
 
 const internalDefinition = `

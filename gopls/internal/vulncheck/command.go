@@ -20,9 +20,9 @@ import (
 
 	"golang.org/x/mod/semver"
 	"golang.org/x/sync/errgroup"
-	"github.com/goki/go-tools/go/packages"
-	"github.com/goki/go-tools-tools/gopls/internal/govulncheck"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/go/packages"
+	"golang.org/x/tools/gopls/internal/govulncheck"
+	"golang.org/x/tools/gopls/internal/lsp/source"
 	"golang.org/x/vuln/client"
 	gvcapi "golang.org/x/vuln/exp/govulncheck"
 	"golang.org/x/vuln/osv"

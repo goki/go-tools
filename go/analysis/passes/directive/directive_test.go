@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/go/analysis"
-	"github.com/goki/go-tools-tools/go/analysis/analysistest"
-	"github.com/goki/go-tools-tools/go/analysis/passes/directive"
+	"golang.org/x/tools/go/analysis"
+	"golang.org/x/tools/go/analysis/analysistest"
+	"golang.org/x/tools/go/analysis/passes/directive"
 )
 
 func Test(t *testing.T) {

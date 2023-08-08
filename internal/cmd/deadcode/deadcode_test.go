@@ -15,8 +15,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/internal/testenv"
-	"github.com/goki/go-tools-tools/txtar"
+	"golang.org/x/tools/internal/testenv"
+	"golang.org/x/tools/txtar"
 )
 
 // Test runs the deadcode command on each scenario

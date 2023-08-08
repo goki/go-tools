@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/span"
-	"github.com/goki/go-tools-tools/internal/tool"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/span"
+	"golang.org/x/tools/internal/tool"
 )
 
 // implementation implements the implementation verb for gopls

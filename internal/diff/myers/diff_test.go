@@ -7,8 +7,8 @@ package myers_test
 import (
 	"testing"
 
-	"github.com/goki/go-tools/internal/diff/difftest"
-	"github.com/goki/go-tools-tools/internal/diff/myers"
+	"golang.org/x/tools/internal/diff/difftest"
+	"golang.org/x/tools/internal/diff/myers"
 )
 
 func TestDiff(t *testing.T) {

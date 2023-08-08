@@ -7,8 +7,8 @@ package diagnostics
 import (
 	"testing"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	. "github.com/goki/go-tools-tools/gopls/internal/lsp/regtest"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	. "golang.org/x/tools/gopls/internal/lsp/regtest"
 )
 
 func TestUndeclaredDiagnostics(t *testing.T) {

@@ -18,8 +18,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/goki/go-tools/go/analysis"
-	"github.com/goki/go-tools-tools/go/analysis/passes/internal/analysisutil"
+	"golang.org/x/tools/go/analysis"
+	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
 )
 
 const Doc = "check // +build directives"

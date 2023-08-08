@@ -17,14 +17,14 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/goki/go-tools/gopls/internal/bug"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/debug"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
-	"github.com/goki/go-tools-tools/gopls/internal/span"
-	"github.com/goki/go-tools-tools/gopls/internal/telemetry"
-	"github.com/goki/go-tools-tools/internal/event"
-	"github.com/goki/go-tools-tools/internal/jsonrpc2"
+	"golang.org/x/tools/gopls/internal/bug"
+	"golang.org/x/tools/gopls/internal/lsp/debug"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/gopls/internal/span"
+	"golang.org/x/tools/gopls/internal/telemetry"
+	"golang.org/x/tools/internal/event"
+	"golang.org/x/tools/internal/jsonrpc2"
 )
 
 func (s *Server) initialize(ctx context.Context, params *protocol.ParamInitialize) (*protocol.InitializeResult, error) {
@@ -127,7 +127,7 @@ func (s *Server) initialize(ctx context.Context, params *protocol.ParamInitializ
 		if dep.Path == "github.com/sergi/go-diff" && dep.Version == "v1.2.0" {
 			if err := s.eventuallyShowMessage(ctx, &protocol.ShowMessageParams{
 				Message: `It looks like you have a bad gopls installation.
-Please reinstall gopls by running 'GO111MODULE=on go install github.com/goki/go-tools-tools/gopls@latest'.
+Please reinstall gopls by running 'GO111MODULE=on go install golang.org/x/tools/gopls@latest'.
 See https://github.com/golang/go/issues/45732 for more information.`,
 				Type: protocol.Error,
 			}); err != nil {

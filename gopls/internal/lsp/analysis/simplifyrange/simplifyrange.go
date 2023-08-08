@@ -13,9 +13,9 @@ import (
 	"go/printer"
 	"go/token"
 
-	"github.com/goki/go-tools/go/analysis"
-	"github.com/goki/go-tools-tools/go/analysis/passes/inspect"
-	"github.com/goki/go-tools-tools/go/ast/inspector"
+	"golang.org/x/tools/go/analysis"
+	"golang.org/x/tools/go/analysis/passes/inspect"
+	"golang.org/x/tools/go/ast/inspector"
 )
 
 const Doc = `check for range statement simplifications

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 //
-// Taken from github.com/goki/go-tools/refactor/rename.
+// Taken from golang.org/x/tools/refactor/rename.
 
 package source
 
@@ -42,9 +42,9 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/goki/go-tools-tools/go/ast/astutil"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/safetoken"
-	"github.com/goki/go-tools-tools/refactor/satisfy"
+	"golang.org/x/tools/go/ast/astutil"
+	"golang.org/x/tools/gopls/internal/lsp/safetoken"
+	"golang.org/x/tools/refactor/satisfy"
 )
 
 // errorf reports an error (e.g. conflict) and prevents file modification.

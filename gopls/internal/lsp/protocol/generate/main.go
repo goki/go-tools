@@ -101,7 +101,7 @@ func writeclient() {
 	"context"
 	"encoding/json"
 
-	"github.com/goki/go-tools/internal/jsonrpc2"
+	"golang.org/x/tools/internal/jsonrpc2"
 )
 `)
 	out.WriteString("type Client interface {\n")
@@ -138,7 +138,7 @@ func writeserver() {
 	"context"
 	"encoding/json"
 
-	"github.com/goki/go-tools-tools/internal/jsonrpc2"
+	"golang.org/x/tools/internal/jsonrpc2"
 )
 `)
 	out.WriteString("type Server interface {\n")

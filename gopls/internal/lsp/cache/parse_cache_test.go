@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/source"
-	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"golang.org/x/tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/gopls/internal/span"
 )
 
 func skipIfNoParseCache(t *testing.T) {

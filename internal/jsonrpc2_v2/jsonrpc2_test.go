@@ -12,9 +12,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/goki/go-tools/internal/event/export/eventtest"
-	jsonrpc2 "github.com/goki/go-tools-tools/internal/jsonrpc2_v2"
-	"github.com/goki/go-tools-tools/internal/stack/stacktest"
+	"golang.org/x/tools/internal/event/export/eventtest"
+	jsonrpc2 "golang.org/x/tools/internal/jsonrpc2_v2"
+	"golang.org/x/tools/internal/stack/stacktest"
 )
 
 var callTests = []invoker{

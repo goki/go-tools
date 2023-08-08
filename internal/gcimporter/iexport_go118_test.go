@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/internal/gcimporter"
-	"github.com/goki/go-tools-tools/internal/testenv"
+	"golang.org/x/tools/internal/gcimporter"
+	"golang.org/x/tools/internal/testenv"
 )
 
 // TODO(rfindley): migrate this to testdata, as has been done in the standard library.

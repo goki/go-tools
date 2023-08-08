@@ -8,8 +8,8 @@
 package hooks
 
 import (
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/source"
 	"honnef.co/go/tools/analysis/lint"
 	"honnef.co/go/tools/quickfix"
 	"honnef.co/go/tools/simple"

@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/fake"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/fake"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
 )
 
 // Use a global edit counter as bench function may execute multiple times, and

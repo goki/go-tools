@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/gopls/internal/lsp"
-	. "github.com/goki/go-tools-tools/gopls/internal/lsp/regtest"
-	"github.com/goki/go-tools-tools/internal/testenv"
+	"golang.org/x/tools/gopls/internal/lsp"
+	. "golang.org/x/tools/gopls/internal/lsp/regtest"
+	"golang.org/x/tools/internal/testenv"
 )
 
 // This file holds various tests for UX with respect to broken workspaces.

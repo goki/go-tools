@@ -15,8 +15,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/goki/go-tools/internal/typeparams"
-	"github.com/goki/go-tools/refactor/satisfy"
+	"golang.org/x/tools/internal/typeparams"
+	"golang.org/x/tools/refactor/satisfy"
 )
 
 // This test exercises various operations on core types of type parameters.

@@ -16,10 +16,10 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/goki/go-tools/go/analysis"
-	"github.com/goki/go-tools-tools/go/ast/astutil"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/safetoken"
-	"github.com/goki/go-tools-tools/internal/analysisinternal"
+	"golang.org/x/tools/go/analysis"
+	"golang.org/x/tools/go/ast/astutil"
+	"golang.org/x/tools/gopls/internal/lsp/safetoken"
+	"golang.org/x/tools/internal/analysisinternal"
 )
 
 const Doc = `suggested fixes for "undeclared name: <>"

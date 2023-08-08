@@ -11,9 +11,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/fake"
-	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
-	"github.com/goki/go-tools-tools/internal/jsonrpc2/servertest"
+	"golang.org/x/tools/gopls/internal/lsp/fake"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/internal/jsonrpc2/servertest"
 )
 
 // Env holds the building blocks of an editor testing environment, providing
