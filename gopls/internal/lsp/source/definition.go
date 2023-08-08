@@ -11,10 +11,10 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.org/x/tools/gopls/internal/bug"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/event"
+	"github.com/goki/go-tools/gopls/internal/bug"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/gopls/internal/span"
+	"github.com/goki/go-tools/internal/event"
 )
 
 // Definition handles the textDocument/definition request for Go files.

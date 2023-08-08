@@ -20,15 +20,15 @@ import (
 	"unicode/utf8"
 
 	"golang.org/x/text/unicode/runenames"
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/gopls/internal/bug"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/safetoken"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/tokeninternal"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/go/ast/astutil"
+	"github.com/goki/go-tools/go/types/typeutil"
+	"github.com/goki/go-tools/gopls/internal/bug"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/gopls/internal/lsp/safetoken"
+	"github.com/goki/go-tools/gopls/internal/span"
+	"github.com/goki/go-tools/internal/event"
+	"github.com/goki/go-tools/internal/tokeninternal"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 // HoverJSON contains information used by hover. It is also the JSON returned

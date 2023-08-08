@@ -15,7 +15,7 @@ some of which are listed below.
 Use the "Go reference" link above for more information about any package.
 
 It also contains the
-[`golang.org/x/tools/gopls`](https://pkg.go.dev/golang.org/x/tools/gopls)
+[`github.com/goki/go-tools/gopls`](https://pkg.go.dev/github.com/goki/go-tools/gopls)
 module, whose root package is a language-server protocol (LSP) server for Go.
 An LSP server analyses the source code of a project and
 responds to requests from a wide range of editors such as VSCode and
@@ -35,7 +35,7 @@ Selected commands:
 
 These commands may be fetched with a command such as
 ```
-go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/goki/go-tools/cmd/goimports@latest
 ```
 
 Selected packages:
@@ -71,15 +71,15 @@ Numerous other packages provide more esoteric functionality.
 
 <!-- Some that didn't make the cut:
 
-golang.org/x/tools/benchmark/parse
-golang.org/x/tools/go/ast/astutil
-golang.org/x/tools/go/types/typeutil
-golang.org/x/tools/playground
-golang.org/x/tools/present
-golang.org/x/tools/refactor/importgraph
-golang.org/x/tools/refactor/rename
-golang.org/x/tools/refactor/satisfy
-golang.org/x/tools/txtar
+github.com/goki/go-tools/benchmark/parse
+github.com/goki/go-tools/go/ast/astutil
+github.com/goki/go-tools/go/types/typeutil
+github.com/goki/go-tools/playground
+github.com/goki/go-tools/present
+github.com/goki/go-tools/refactor/importgraph
+github.com/goki/go-tools/refactor/rename
+github.com/goki/go-tools/refactor/satisfy
+github.com/goki/go-tools/txtar
 
 -->
 

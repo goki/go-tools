@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/lsp/cache"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
+	"github.com/goki/go-tools/gopls/internal/lsp/cache"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
 )
 
 // Test for the timeformat analyzer, following golang/vscode-go#2406.

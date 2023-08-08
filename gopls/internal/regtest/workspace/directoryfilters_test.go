@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
-	"golang.org/x/tools/internal/testenv"
+	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
+	"github.com/goki/go-tools/internal/testenv"
 )
 
 // This file contains regression tests for the directoryFilters setting.

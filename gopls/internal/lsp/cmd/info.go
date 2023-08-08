@@ -15,12 +15,12 @@ import (
 	"sort"
 	"strings"
 
-	goplsbug "golang.org/x/tools/gopls/internal/bug"
-	"golang.org/x/tools/gopls/internal/lsp/browser"
-	"golang.org/x/tools/gopls/internal/lsp/debug"
-	"golang.org/x/tools/gopls/internal/lsp/filecache"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/internal/tool"
+	goplsbug "github.com/goki/go-tools/gopls/internal/bug"
+	"github.com/goki/go-tools/gopls/internal/lsp/browser"
+	"github.com/goki/go-tools/gopls/internal/lsp/debug"
+	"github.com/goki/go-tools/gopls/internal/lsp/filecache"
+	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools/internal/tool"
 )
 
 // help implements the help command.

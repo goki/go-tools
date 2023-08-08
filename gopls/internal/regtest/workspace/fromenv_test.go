@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
-	"golang.org/x/tools/internal/testenv"
+	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
+	"github.com/goki/go-tools/internal/testenv"
 )
 
 // Test that setting go.work via environment variables or settings works.

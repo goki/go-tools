@@ -9,11 +9,11 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/lsp/source/completion"
-	"golang.org/x/tools/gopls/internal/lsp/tests"
-	"golang.org/x/tools/gopls/internal/span"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools/gopls/internal/lsp/source/completion"
+	"github.com/goki/go-tools/gopls/internal/lsp/tests"
+	"github.com/goki/go-tools/gopls/internal/span"
 )
 
 func (r *runner) Completion(t *testing.T, src span.Span, test tests.Completion, items tests.CompletionItems) {

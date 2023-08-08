@@ -4,14 +4,14 @@
 
 // Package static computes the call graph of a Go program containing
 // only static call edges.
-package static // import "golang.org/x/tools/go/callgraph/static"
+package static // import "github.com/goki/go-tools/go/callgraph/static"
 
 // TODO(zpavlinovic): update static for how it handles generic function bodies.
 
 import (
-	"golang.org/x/tools/go/callgraph"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
+	"github.com/goki/go-tools/go/callgraph"
+	"github.com/goki/go-tools/go/ssa"
+	"github.com/goki/go-tools/go/ssa/ssautil"
 )
 
 // CallGraph computes the call graph of the specified program

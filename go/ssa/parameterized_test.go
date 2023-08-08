@@ -11,7 +11,7 @@ import (
 	"go/types"
 	"testing"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 func TestIsParameterized(t *testing.T) {

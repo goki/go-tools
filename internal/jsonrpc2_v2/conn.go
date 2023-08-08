@@ -14,10 +14,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/event/keys"
-	"golang.org/x/tools/internal/event/label"
-	"golang.org/x/tools/internal/event/tag"
+	"github.com/goki/go-tools/internal/event"
+	"github.com/goki/go-tools/internal/event/keys"
+	"github.com/goki/go-tools/internal/event/label"
+	"github.com/goki/go-tools/internal/event/tag"
 )
 
 // Binder builds a connection configuration.

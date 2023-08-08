@@ -8,9 +8,9 @@ import (
 	"context"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 
-	. "golang.org/x/tools/gopls/internal/lsp/lsprpc"
+	. "github.com/goki/go-tools/gopls/internal/lsp/lsprpc"
 )
 
 func TestCommandInterceptor(t *testing.T) {

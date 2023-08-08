@@ -14,10 +14,10 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/go/analysis"
+	"github.com/goki/go-tools/go/analysis/passes/inspect"
+	"github.com/goki/go-tools/go/ast/inspector"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 // TODO(hyangah): use analysisutil.MustExtractDoc.

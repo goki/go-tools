@@ -12,9 +12,9 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
+	"github.com/goki/go-tools/go/analysis"
+	"github.com/goki/go-tools/go/analysis/passes/inspect"
+	"github.com/goki/go-tools/go/ast/inspector"
 )
 
 const Doc = `check for unused parameters of functions

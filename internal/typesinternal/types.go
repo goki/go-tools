@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"golang.org/x/tools/go/types/objectpath"
+	"github.com/goki/go-tools/go/types/objectpath"
 )
 
 func SetUsesCgo(conf *types.Config) bool {
@@ -58,11 +58,11 @@ var SetGoVersion = func(conf *types.Config, version string) bool { return false 
 //
 // TODO(golang/go#61443): eliminate this parameter one way or the other.
 //
-//go:linkname SkipEncoderMethodSorting golang.org/x/tools/go/types/objectpath.skipMethodSorting
+//go:linkname SkipEncoderMethodSorting github.com/goki/go-tools/go/types/objectpath.skipMethodSorting
 func SkipEncoderMethodSorting(enc *objectpath.Encoder)
 
 // ObjectpathObject is like objectpath.Object, but allows suppressing method
 // sorting (which is not necessary for gopls).
 //
-//go:linkname ObjectpathObject golang.org/x/tools/go/types/objectpath.object
+//go:linkname ObjectpathObject github.com/goki/go-tools/go/types/objectpath.object
 func ObjectpathObject(pkg *types.Package, p objectpath.Path, skipMethodSorting bool) (types.Object, error)

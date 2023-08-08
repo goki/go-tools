@@ -15,12 +15,12 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/bug"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/event/tag"
-	"golang.org/x/tools/internal/tokeninternal"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/gopls/internal/bug"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/internal/event"
+	"github.com/goki/go-tools/internal/event/tag"
+	"github.com/goki/go-tools/internal/tokeninternal"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 // FormatType returns the detail and kind for a types.Type.

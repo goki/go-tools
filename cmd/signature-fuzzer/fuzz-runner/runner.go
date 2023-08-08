@@ -22,7 +22,7 @@ import (
 	"strings"
 	"time"
 
-	generator "golang.org/x/tools/cmd/signature-fuzzer/internal/fuzz-generator"
+	generator "github.com/goki/go-tools/cmd/signature-fuzzer/internal/fuzz-generator"
 )
 
 const pkName = "fzTest"

@@ -18,15 +18,15 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/go/gcexportdata"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/astutil"
-	"golang.org/x/tools/gopls/internal/lsp/cache"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/lsp/source/typerefs"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/packagesinternal"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/go/gcexportdata"
+	"github.com/goki/go-tools/go/packages"
+	"github.com/goki/go-tools/gopls/internal/astutil"
+	"github.com/goki/go-tools/gopls/internal/lsp/cache"
+	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools/gopls/internal/lsp/source/typerefs"
+	"github.com/goki/go-tools/gopls/internal/span"
+	"github.com/goki/go-tools/internal/packagesinternal"
+	"github.com/goki/go-tools/internal/testenv"
 )
 
 var (

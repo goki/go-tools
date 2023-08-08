@@ -14,8 +14,8 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/ast/astutil"
+	"github.com/goki/go-tools/go/analysis"
+	"github.com/goki/go-tools/go/ast/astutil"
 )
 
 const Doc = `check for unused variables

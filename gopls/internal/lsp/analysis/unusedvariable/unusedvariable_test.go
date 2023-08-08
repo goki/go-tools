@@ -7,8 +7,8 @@ package unusedvariable_test
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/gopls/internal/lsp/analysis/unusedvariable"
+	"github.com/goki/go-tools/go/analysis/analysistest"
+	"github.com/goki/go-tools/gopls/internal/lsp/analysis/unusedvariable"
 )
 
 func Test(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/internal/memoize"
+	"github.com/goki/go-tools/internal/memoize"
 )
 
 func TestGet(t *testing.T) {

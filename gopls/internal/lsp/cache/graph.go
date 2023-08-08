@@ -7,10 +7,10 @@ package cache
 import (
 	"sort"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/bug"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/span"
+	"github.com/goki/go-tools/go/packages"
+	"github.com/goki/go-tools/gopls/internal/bug"
+	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools/gopls/internal/span"
 )
 
 // A metadataGraph is an immutable and transitively closed import

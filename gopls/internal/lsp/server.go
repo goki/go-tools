@@ -13,13 +13,13 @@ import (
 	"os"
 	"sync"
 
-	"golang.org/x/tools/gopls/internal/lsp/cache"
-	"golang.org/x/tools/gopls/internal/lsp/progress"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/jsonrpc2"
+	"github.com/goki/go-tools/gopls/internal/lsp/cache"
+	"github.com/goki/go-tools/gopls/internal/lsp/progress"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools/gopls/internal/span"
+	"github.com/goki/go-tools/internal/event"
+	"github.com/goki/go-tools/internal/jsonrpc2"
 )
 
 const concurrentAnalyses = 1

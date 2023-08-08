@@ -1,4 +1,4 @@
-module golang.org/x/tools
+module github.com/goki/go-tools
 
 go 1.18 // tagx:compat 1.16
 

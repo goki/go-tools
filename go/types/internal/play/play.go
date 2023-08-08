@@ -27,9 +27,9 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/types/typeutil"
+	"github.com/goki/go-tools/go/ast/astutil"
+	"github.com/goki/go-tools/go/packages"
+	"github.com/goki/go-tools/go/types/typeutil"
 )
 
 // TODO(adonovan):

@@ -15,9 +15,9 @@ import (
 	"testing"
 
 	"golang.org/x/sync/errgroup"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/gcimporter"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/go/packages"
+	"github.com/goki/go-tools/internal/gcimporter"
+	"github.com/goki/go-tools/internal/testenv"
 )
 
 // TestStd type-checks the standard library using shallow export data.

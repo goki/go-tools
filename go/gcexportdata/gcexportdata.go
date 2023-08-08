@@ -17,7 +17,7 @@
 // developer tools, which will then be able to consume both Go 1.7 and
 // Go 1.8 export data files, so they will work before and after the
 // Go update. (See discussion at https://golang.org/issue/15651.)
-package gcexportdata // import "golang.org/x/tools/go/gcexportdata"
+package gcexportdata // import "github.com/goki/go-tools/go/gcexportdata"
 
 import (
 	"bufio"
@@ -29,7 +29,7 @@ import (
 	"io"
 	"os/exec"
 
-	"golang.org/x/tools/internal/gcimporter"
+	"github.com/goki/go-tools/internal/gcimporter"
 )
 
 // Find returns the name of an object (.o) or archive (.a) file
@@ -42,7 +42,7 @@ import (
 // Find also returns the package's resolved (canonical) import path,
 // reflecting the effects of srcDir and vendoring on importPath.
 //
-// Deprecated: Use the higher-level API in golang.org/x/tools/go/packages,
+// Deprecated: Use the higher-level API in github.com/goki/go-tools/go/packages,
 // which is more efficient.
 func Find(importPath, srcDir string) (filename, path string) {
 	cmd := exec.Command("go", "list", "-json", "-export", "--", importPath)

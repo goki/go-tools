@@ -7,9 +7,9 @@ package noresultvalues_test
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/gopls/internal/lsp/analysis/noresultvalues"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/go/analysis/analysistest"
+	"github.com/goki/go-tools/gopls/internal/lsp/analysis/noresultvalues"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 func Test(t *testing.T) {

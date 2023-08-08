@@ -9,10 +9,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/gopls/internal/lsp"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/gopls/internal/lsp"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 func TestBadURICrash_VSCodeIssue1498(t *testing.T) {

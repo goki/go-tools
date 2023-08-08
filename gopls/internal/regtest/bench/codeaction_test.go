@@ -9,7 +9,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 )
 
 func BenchmarkCodeAction(b *testing.B) {

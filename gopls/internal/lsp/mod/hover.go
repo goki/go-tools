@@ -13,10 +13,10 @@ import (
 
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/semver"
-	"golang.org/x/tools/gopls/internal/govulncheck"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/internal/event"
+	"github.com/goki/go-tools/gopls/internal/govulncheck"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools/internal/event"
 )
 
 func Hover(ctx context.Context, snapshot source.Snapshot, fh source.FileHandle, position protocol.Position) (*protocol.Hover, error) {
@@ -335,7 +335,7 @@ func formatExplanation(text string, req *modfile.Require, options *source.Option
 	// If the explanation is 3 lines, then it is of the form:
 	// # golang.org/x/tools
 	// modtest
-	// golang.org/x/tools/go/packages
+	// github.com/goki/go-tools/go/packages
 	if length == 3 {
 		msg := fmt.Sprintf(" `%s`.", splt[1])
 		b.WriteString(msg)

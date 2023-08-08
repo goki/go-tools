@@ -13,7 +13,7 @@ import (
 	"reflect"
 	"testing"
 
-	"golang.org/x/tools/godoc/vfs"
+	"github.com/goki/go-tools/godoc/vfs"
 )
 
 var (

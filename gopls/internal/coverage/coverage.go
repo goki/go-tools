@@ -37,7 +37,7 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/tools/cover"
+	"github.com/goki/go-tools/cover"
 )
 
 var (
@@ -64,7 +64,7 @@ func main() {
 	tests = realTestName(tests)
 
 	// report coverage for packages under internal/lsp
-	parg := "golang.org/x/tools/gopls/internal/lsp/..."
+	parg := "github.com/goki/go-tools/gopls/internal/lsp/..."
 
 	accum := []string{}
 	seen := make(map[string]bool)

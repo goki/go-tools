@@ -4,14 +4,14 @@
 
 // Package imports implements a Go pretty-printer (like package "go/format")
 // that also adds or removes import statements as necessary.
-package imports // import "golang.org/x/tools/imports"
+package imports // import "github.com/goki/go-tools/imports"
 
 import (
 	"io/ioutil"
 	"log"
 
-	"golang.org/x/tools/internal/gocommand"
-	intimp "golang.org/x/tools/internal/imports"
+	"github.com/goki/go-tools/internal/gocommand"
+	intimp "github.com/goki/go-tools/internal/imports"
 )
 
 // Options specifies options for processing files.

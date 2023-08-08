@@ -7,7 +7,7 @@
 //
 // To run:
 //
-// $ cd $GOPATH/src/golang.org/x/tools/gopls
+// $ cd $GOPATH/src/github.com/goki/go-tools/gopls
 // $ go run release/release.go -version=<version>
 package main
 
@@ -26,7 +26,7 @@ import (
 
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/semver"
-	"golang.org/x/tools/go/packages"
+	"github.com/goki/go-tools/go/packages"
 )
 
 var versionFlag = flag.String("version", "", "version to tag")
@@ -70,7 +70,7 @@ func main() {
 // binary is equivalent to the version being published. It reports an error if
 // not.
 func validateHardcodedVersion(version string) error {
-	const debugPkg = "golang.org/x/tools/gopls/internal/lsp/debug"
+	const debugPkg = "github.com/goki/go-tools/gopls/internal/lsp/debug"
 	pkgs, err := packages.Load(&packages.Config{
 		Mode: packages.NeedName | packages.NeedFiles |
 			packages.NeedCompiledGoFiles | packages.NeedImports |

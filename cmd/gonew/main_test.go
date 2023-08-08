@@ -16,8 +16,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/internal/diffp"
-	"golang.org/x/tools/txtar"
+	"github.com/goki/go-tools/internal/diffp"
+	"github.com/goki/go-tools/txtar"
 )
 
 func init() {

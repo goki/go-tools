@@ -13,7 +13,7 @@ import (
 	"go/ast"
 	"math"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 const (

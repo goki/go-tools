@@ -13,7 +13,7 @@ import (
 	"sync"
 	"testing"
 
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/internal/testenv"
 )
 
 func TestMain(m *testing.M) {

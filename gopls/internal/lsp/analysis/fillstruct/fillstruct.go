@@ -22,14 +22,14 @@ import (
 	"strings"
 	"unicode"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/gopls/internal/lsp/safetoken"
-	"golang.org/x/tools/internal/analysisinternal"
-	"golang.org/x/tools/internal/fuzzy"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/go/analysis"
+	"github.com/goki/go-tools/go/analysis/passes/inspect"
+	"github.com/goki/go-tools/go/ast/astutil"
+	"github.com/goki/go-tools/go/ast/inspector"
+	"github.com/goki/go-tools/gopls/internal/lsp/safetoken"
+	"github.com/goki/go-tools/internal/analysisinternal"
+	"github.com/goki/go-tools/internal/fuzzy"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 const Doc = `note incomplete struct initializations

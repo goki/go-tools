@@ -11,7 +11,7 @@ import (
 	"go/token"
 	"strings"
 
-	"golang.org/x/tools/go/analysis"
+	"github.com/goki/go-tools/go/analysis"
 )
 
 const Doc = `check //go:embed directive usage

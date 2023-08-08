@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"golang.org/x/mod/modfile"
-	"golang.org/x/tools/internal/goroot"
+	"github.com/goki/go-tools/internal/goroot"
 
 	exec "golang.org/x/sys/execabs"
 )

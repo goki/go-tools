@@ -12,7 +12,7 @@ import (
 	"runtime"
 	"testing"
 
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/internal/testenv"
 )
 
 func mkGenState() *genstate {

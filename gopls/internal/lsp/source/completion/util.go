@@ -9,12 +9,12 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/safetoken"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/internal/diff"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/go/types/typeutil"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/gopls/internal/lsp/safetoken"
+	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools/internal/diff"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 // exprAtPos returns the index of the expression containing pos.
