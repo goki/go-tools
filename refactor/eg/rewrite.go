@@ -19,7 +19,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/goki/go-tools/go/ast/astutil"
+	"golang.org/x/tools/go/ast/astutil"
 )
 
 // transformItem takes a reflect.Value representing a variable of type ast.Node

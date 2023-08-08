@@ -17,7 +17,7 @@ splitdwarf will place it where the OSX tools expect it, in
 "<osxMachoFile>.dSYM/Contents/Resources/DWARF/<osxMachoFile>",
 creating directories as necessary.
 */
-package main // import "github.com/goki/go-tools/cmd/splitdwarf"
+package main // import "golang.org/x/tools/cmd/splitdwarf"
 
 import (
 	"crypto/sha256"
@@ -28,7 +28,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/goki/go-tools/cmd/splitdwarf/internal/macho"
+	"golang.org/x/tools/cmd/splitdwarf/internal/macho"
 )
 
 const (

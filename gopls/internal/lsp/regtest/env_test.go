@@ -9,7 +9,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
 )
 
 func TestProgressUpdating(t *testing.T) {

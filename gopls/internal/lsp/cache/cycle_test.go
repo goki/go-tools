@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/gopls/internal/lsp/source"
 )
 
 // This is an internal test of the breakImportCycles logic.

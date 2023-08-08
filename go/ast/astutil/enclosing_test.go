@@ -18,8 +18,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/go/ast/astutil"
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/go/ast/astutil"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // pathToString returns a string containing the concrete types of the

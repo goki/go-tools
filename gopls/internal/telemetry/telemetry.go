@@ -8,7 +8,7 @@ import (
 	"os"
 
 	"golang.org/x/telemetry/counter"
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
 )
 
 // Start starts telemetry instrumentation.

@@ -114,7 +114,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 type opaqueType struct {

@@ -16,7 +16,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/goki/go-tools/present"
+	"golang.org/x/tools/present"
 )
 
 func init() {

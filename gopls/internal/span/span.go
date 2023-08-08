@@ -14,7 +14,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/safetoken"
+	"golang.org/x/tools/gopls/internal/lsp/safetoken"
 )
 
 // A Span represents a range of text within a source file.  The start

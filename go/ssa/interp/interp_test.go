@@ -29,11 +29,11 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/goki/go-tools/go/loader"
-	"github.com/goki/go-tools/go/ssa"
-	"github.com/goki/go-tools/go/ssa/interp"
-	"github.com/goki/go-tools/go/ssa/ssautil"
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/go/loader"
+	"golang.org/x/tools/go/ssa"
+	"golang.org/x/tools/go/ssa/interp"
+	"golang.org/x/tools/go/ssa/ssautil"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // Each line contains a space-separated list of $GOROOT/test/
@@ -185,7 +185,7 @@ func run(t *testing.T, input string, goroot string) {
 		interp.CapturedOutput = nil
 	}()
 
-	hint = fmt.Sprintf("To dump SSA representation, run:\n%% go build github.com/goki/go-tools/cmd/ssadump && ./ssadump -test -build=CFP %s\n", input)
+	hint = fmt.Sprintf("To dump SSA representation, run:\n%% go build golang.org/x/tools/cmd/ssadump && ./ssadump -test -build=CFP %s\n", input)
 
 	iprog, err := conf.Load()
 	if err != nil {
@@ -208,7 +208,7 @@ func run(t *testing.T, input string, goroot string) {
 	if sizes.Sizeof(types.Typ[types.Int]) < 4 {
 		panic("bogus SizesFor")
 	}
-	hint = fmt.Sprintf("To trace execution, run:\n%% go build github.com/goki/go-tools/cmd/ssadump && ./ssadump -build=C -test -run --interp=T %s\n", input)
+	hint = fmt.Sprintf("To trace execution, run:\n%% go build golang.org/x/tools/cmd/ssadump && ./ssadump -build=C -test -run --interp=T %s\n", input)
 	var imode interp.Mode // default mode
 	// imode |= interp.DisableRecover // enable for debugging
 	// imode |= interp.EnableTracing // enable for debugging

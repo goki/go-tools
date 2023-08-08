@@ -10,7 +10,7 @@ import (
 	"sync"
 	"text/template"
 
-	"github.com/goki/go-tools/godoc/vfs/httpfs"
+	"golang.org/x/tools/godoc/vfs/httpfs"
 )
 
 // SearchResultFunc functions return an HTML body for displaying search results.

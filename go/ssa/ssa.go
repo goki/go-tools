@@ -15,8 +15,8 @@ import (
 	"go/types"
 	"sync"
 
-	"github.com/goki/go-tools/go/types/typeutil"
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/go/types/typeutil"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // A Program is a partial or complete Go program converted to SSA form.

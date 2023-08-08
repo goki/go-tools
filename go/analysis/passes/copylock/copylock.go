@@ -13,11 +13,11 @@ import (
 	"go/token"
 	"go/types"
 
-	"github.com/goki/go-tools/go/analysis"
-	"github.com/goki/go-tools/go/analysis/passes/inspect"
-	"github.com/goki/go-tools/go/analysis/passes/internal/analysisutil"
-	"github.com/goki/go-tools/go/ast/inspector"
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/go/analysis"
+	"golang.org/x/tools/go/analysis/passes/inspect"
+	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
+	"golang.org/x/tools/go/ast/inspector"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 const Doc = `check for locks erroneously passed by value
@@ -29,7 +29,7 @@ values should be referred to through a pointer.`
 var Analyzer = &analysis.Analyzer{
 	Name:             "copylocks",
 	Doc:              Doc,
-	URL:              "https://pkg.go.dev/github.com/goki/go-tools/go/analysis/passes/copylocks",
+	URL:              "https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/copylocks",
 	Requires:         []*analysis.Analyzer{inspect.Analyzer},
 	RunDespiteErrors: true,
 	Run:              run,

@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
+	. "golang.org/x/tools/gopls/internal/lsp/regtest"
 )
 
 func TestSubdirWatchPatterns(t *testing.T) {

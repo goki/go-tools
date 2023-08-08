@@ -16,8 +16,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/go/ast/inspector"
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/go/ast/inspector"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 var netFiles []*ast.File

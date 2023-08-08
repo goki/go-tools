@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/goki/go-tools/internal/event"
+	"golang.org/x/tools/internal/event"
 )
 
 // Handler is invoked to handle incoming requests.

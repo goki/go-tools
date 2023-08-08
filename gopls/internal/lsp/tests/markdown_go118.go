@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/tests/compare"
+	"golang.org/x/tools/gopls/internal/lsp/tests/compare"
 )
 
 // DiffMarkdown compares two markdown strings produced by parsing go doc

@@ -19,12 +19,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/go/ast/astutil"
-	"github.com/goki/go-tools/go/expect"
-	"github.com/goki/go-tools/go/loader"
-	"github.com/goki/go-tools/go/ssa"
-	"github.com/goki/go-tools/go/ssa/ssautil"
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/go/ast/astutil"
+	"golang.org/x/tools/go/expect"
+	"golang.org/x/tools/go/loader"
+	"golang.org/x/tools/go/ssa"
+	"golang.org/x/tools/go/ssa/ssautil"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 func TestObjValueLookup(t *testing.T) {

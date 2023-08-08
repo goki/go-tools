@@ -26,7 +26,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/goki/go-tools/go/packages"
+	"golang.org/x/tools/go/packages"
 )
 
 func mustOpen(name string) io.Reader {

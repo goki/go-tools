@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"unicode/utf8"
 
-	"github.com/goki/go-tools/gopls/internal/span"
+	"golang.org/x/tools/gopls/internal/span"
 )
 
 func URIFromSpanURI(uri span.URI) DocumentURI {

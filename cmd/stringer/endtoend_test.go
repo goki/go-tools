@@ -22,8 +22,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/goki/go-tools/internal/testenv"
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/internal/testenv"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // This file contains a test that compiles and runs each program in testdata

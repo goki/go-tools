@@ -7,9 +7,9 @@ package printf_test
 import (
 	"testing"
 
-	"github.com/goki/go-tools/go/analysis/analysistest"
-	"github.com/goki/go-tools/go/analysis/passes/printf"
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/go/analysis/analysistest"
+	"golang.org/x/tools/go/analysis/passes/printf"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 func Test(t *testing.T) {

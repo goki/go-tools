@@ -9,10 +9,10 @@ import (
 	"go/token"
 	"go/types"
 
-	"github.com/goki/go-tools/go/callgraph"
-	"github.com/goki/go-tools/go/ssa"
-	"github.com/goki/go-tools/go/types/typeutil"
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/go/callgraph"
+	"golang.org/x/tools/go/ssa"
+	"golang.org/x/tools/go/types/typeutil"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // node interface for VTA nodes.
@@ -587,7 +587,7 @@ func (b *builder) call(c ssa.CallInstruction) {
 func addArgumentFlows(b *builder, c ssa.CallInstruction, f *ssa.Function) {
 	// When f has no paremeters (including receiver), there is no type
 	// flow here. Also, f's body and parameters might be missing, such
-	// as when vta is used within the github.com/goki/go-tools/go/analysis
+	// as when vta is used within the golang.org/x/tools/go/analysis
 	// framework (see github.com/golang/go/issues/50670).
 	if len(f.Params) == 0 {
 		return
@@ -613,7 +613,7 @@ func addArgumentFlows(b *builder, c ssa.CallInstruction, f *ssa.Function) {
 	}
 	for i, v := range cc.Args {
 		// Parameters of f might not be available, as in the case
-		// when vta is used within the github.com/goki/go-tools/go/analysis
+		// when vta is used within the golang.org/x/tools/go/analysis
 		// framework (see github.com/golang/go/issues/50670).
 		//
 		// TODO: investigate other cases of missing body and parameters

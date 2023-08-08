@@ -12,7 +12,7 @@ import (
 	"go/token"
 	"sort"
 
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // PathEnclosingInterval returns the node that encloses the source

@@ -16,8 +16,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/goki/go-tools/go/ast/astutil"
-	"github.com/goki/go-tools/go/buildutil"
+	"golang.org/x/tools/go/ast/astutil"
+	"golang.org/x/tools/go/buildutil"
 )
 
 // parseOctothorpDecimal returns the numeric value if s matches "#%d",

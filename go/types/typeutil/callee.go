@@ -8,8 +8,8 @@ import (
 	"go/ast"
 	"go/types"
 
-	"github.com/goki/go-tools/go/ast/astutil"
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/go/ast/astutil"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // Callee returns the named target of a function call, if any:

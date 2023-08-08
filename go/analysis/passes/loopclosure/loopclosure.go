@@ -9,11 +9,11 @@ import (
 	"go/ast"
 	"go/types"
 
-	"github.com/goki/go-tools/go/analysis"
-	"github.com/goki/go-tools/go/analysis/passes/inspect"
-	"github.com/goki/go-tools/go/analysis/passes/internal/analysisutil"
-	"github.com/goki/go-tools/go/ast/inspector"
-	"github.com/goki/go-tools/go/types/typeutil"
+	"golang.org/x/tools/go/analysis"
+	"golang.org/x/tools/go/analysis/passes/inspect"
+	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
+	"golang.org/x/tools/go/ast/inspector"
+	"golang.org/x/tools/go/types/typeutil"
 )
 
 //go:embed doc.go
@@ -22,7 +22,7 @@ var doc string
 var Analyzer = &analysis.Analyzer{
 	Name:     "loopclosure",
 	Doc:      analysisutil.MustExtractDoc(doc, "loopclosure"),
-	URL:      "https://pkg.go.dev/github.com/goki/go-tools/go/analysis/passes/loopclosure",
+	URL:      "https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/loopclosure",
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
 	Run:      run,
 }

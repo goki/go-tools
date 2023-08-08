@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/goki/go-tools/internal/event/label"
+	"golang.org/x/tools/internal/event/label"
 )
 
 // Event holds the information about an event of note that occurred.

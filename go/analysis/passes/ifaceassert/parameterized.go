@@ -7,7 +7,7 @@ package ifaceassert
 import (
 	"go/types"
 
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // isParameterized reports whether typ contains any of the type parameters of tparams.

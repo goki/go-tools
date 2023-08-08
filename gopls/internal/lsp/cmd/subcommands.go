@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"text/tabwriter"
 
-	"github.com/goki/go-tools/internal/tool"
+	"golang.org/x/tools/internal/tool"
 )
 
 // subcommands is a helper that may be embedded for commands that delegate to

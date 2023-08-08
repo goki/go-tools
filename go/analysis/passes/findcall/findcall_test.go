@@ -7,8 +7,8 @@ package findcall_test
 import (
 	"testing"
 
-	"github.com/goki/go-tools/go/analysis/analysistest"
-	"github.com/goki/go-tools/go/analysis/passes/findcall"
+	"golang.org/x/tools/go/analysis/analysistest"
+	"golang.org/x/tools/go/analysis/passes/findcall"
 )
 
 func init() {

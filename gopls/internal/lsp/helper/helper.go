@@ -62,7 +62,7 @@ package lsp
 import (
 	"context"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"golang.org/x/tools/gopls/internal/lsp/protocol"
 )
 
 {{range $key, $v := .Stuff}}

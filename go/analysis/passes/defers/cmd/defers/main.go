@@ -6,8 +6,8 @@
 package main
 
 import (
-	"github.com/goki/go-tools/go/analysis/passes/defers"
-	"github.com/goki/go-tools/go/analysis/singlechecker"
+	"golang.org/x/tools/go/analysis/passes/defers"
+	"golang.org/x/tools/go/analysis/singlechecker"
 )
 
 func main() { singlechecker.Main(defers.Analyzer) }

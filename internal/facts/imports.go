@@ -7,7 +7,7 @@ package facts
 import (
 	"go/types"
 
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // importMap computes the import map for a package by traversing the

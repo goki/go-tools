@@ -14,7 +14,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/goki/go-tools/godoc/static"
+	"golang.org/x/tools/godoc/static"
 )
 
 func main() {

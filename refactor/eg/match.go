@@ -14,7 +14,7 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/goki/go-tools/go/ast/astutil"
+	"golang.org/x/tools/go/ast/astutil"
 )
 
 // matchExpr reports whether pattern x matches y.

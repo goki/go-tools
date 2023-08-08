@@ -16,9 +16,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/internal/bisect"
-	"github.com/goki/go-tools/internal/diffp"
-	"github.com/goki/go-tools/txtar"
+	"golang.org/x/tools/internal/bisect"
+	"golang.org/x/tools/internal/diffp"
+	"golang.org/x/tools/txtar"
 )
 
 var update = flag.Bool("update", false, "update testdata with new stdout/stderr")

@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goki/go-tools/go/types/typeutil"
+	"golang.org/x/tools/go/types/typeutil"
 )
 
 func TestIntuitiveMethodSet(t *testing.T) {

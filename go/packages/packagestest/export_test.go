@@ -12,7 +12,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/goki/go-tools/go/packages/packagestest"
+	"golang.org/x/tools/go/packages/packagestest"
 )
 
 var testdata = []packagestest.Module{{

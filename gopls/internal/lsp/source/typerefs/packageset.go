@@ -11,7 +11,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"golang.org/x/tools/gopls/internal/lsp/source"
 )
 
 // PackageIndex stores common data to enable efficient representation of

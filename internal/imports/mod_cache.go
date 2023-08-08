@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/goki/go-tools/internal/gopathwalk"
+	"golang.org/x/tools/internal/gopathwalk"
 )
 
 // To find packages to import, the resolver needs to know about all of

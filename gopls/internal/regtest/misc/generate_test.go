@@ -12,7 +12,7 @@ package misc
 import (
 	"testing"
 
-	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
+	. "golang.org/x/tools/gopls/internal/lsp/regtest"
 )
 
 func TestGenerateProgress(t *testing.T) {

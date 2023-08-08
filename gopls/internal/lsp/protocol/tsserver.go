@@ -14,7 +14,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/goki/go-tools/internal/jsonrpc2"
+	"golang.org/x/tools/internal/jsonrpc2"
 )
 
 type Server interface {

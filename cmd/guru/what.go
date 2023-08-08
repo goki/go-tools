@@ -15,8 +15,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/goki/go-tools/cmd/guru/serial"
-	"github.com/goki/go-tools/go/ast/astutil"
+	"golang.org/x/tools/cmd/guru/serial"
+	"golang.org/x/tools/go/ast/astutil"
 )
 
 // what reports all the information about the query selection that can be

@@ -43,8 +43,8 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/goki/go-tools/go/ssa"
-	"github.com/goki/go-tools/go/types/typeutil"
+	"golang.org/x/tools/go/ssa"
+	"golang.org/x/tools/go/types/typeutil"
 )
 
 type value interface{}

@@ -30,7 +30,7 @@ package. Use -filter= to display all results.
 
 Example: show all dead code within the gopls module:
 
-	$ deadcode -test github.com/goki/go-tools/gopls/...
+	$ deadcode -test golang.org/x/tools/gopls/...
 
 The analysis can soundly analyze dynamic calls though func values,
 interface methods, and reflection. However, it does not currently

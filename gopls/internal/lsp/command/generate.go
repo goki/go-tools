@@ -11,7 +11,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/goki/go-tools/gopls/internal/lsp/command/gen"
+	"golang.org/x/tools/gopls/internal/lsp/command/gen"
 )
 
 func main() {

@@ -7,7 +7,7 @@ package analysisutil_test
 import (
 	"testing"
 
-	"github.com/goki/go-tools/go/analysis/passes/internal/analysisutil"
+	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
 )
 
 func TestExtractDoc(t *testing.T) {

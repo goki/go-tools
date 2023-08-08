@@ -16,7 +16,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/goki/go-tools/internal/pkgbits"
+	"golang.org/x/tools/internal/pkgbits"
 )
 
 // A pkgReader holds the shared state for reading a unified IR package

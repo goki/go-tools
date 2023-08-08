@@ -9,7 +9,7 @@ import (
 	"go/ast"
 	"go/types"
 
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // ErrNoIdentFound is error returned when no identifier is found at a particular position

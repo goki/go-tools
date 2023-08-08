@@ -15,7 +15,7 @@ import (
 	"go/token"
 	"go/types"
 
-	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/tools/internal/typeparams"
 )
 
 // EnclosingFunction returns the function that contains the syntax

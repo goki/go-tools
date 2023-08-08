@@ -13,7 +13,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/goki/go-tools/internal/event"
+	"golang.org/x/tools/internal/event"
 )
 
 // NOTE: This file provides an experimental API for serving multiple remote
