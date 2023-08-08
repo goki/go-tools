@@ -233,8 +233,8 @@ func checkCwd() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	// we expect to be at the root of golang.org/x/tools
-	cmd := exec.Command("go", "list", "-m", "-f", "{{.Dir}}", "golang.org/x/tools")
+	// we expect to be at the root of github.com/goki/go-tools
+	cmd := exec.Command("go", "list", "-m", "-f", "{{.Dir}}", "github.com/goki/go-tools")
 	buf, err := cmd.Output()
 	buf = bytes.Trim(buf, "\n \t") // remove \n at end
 	if err != nil {

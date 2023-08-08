@@ -11,12 +11,12 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/mod/modfile"
-	"golang.org/x/mod/semver"
 	"github.com/goki/go-tools/gopls/internal/govulncheck"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
 	"github.com/goki/go-tools/internal/event"
+	"golang.org/x/mod/modfile"
+	"golang.org/x/mod/semver"
 )
 
 func Hover(ctx context.Context, snapshot source.Snapshot, fh source.FileHandle, position protocol.Position) (*protocol.Hover, error) {
@@ -333,7 +333,7 @@ func formatExplanation(text string, req *modfile.Require, options *source.Option
 	b.WriteString("This module is necessary because " + reference + " is imported in")
 
 	// If the explanation is 3 lines, then it is of the form:
-	// # golang.org/x/tools
+	// # github.com/goki/go-tools
 	// modtest
 	// github.com/goki/go-tools/go/packages
 	if length == 3 {

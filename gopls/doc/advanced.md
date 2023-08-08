@@ -25,7 +25,7 @@ cd $(mktemp -d)
 go mod init gopls-unstable
 
 # Use 'go get' to add requirements and to ensure they work together.
-go get -d github.com/goki/go-tools/gopls@master golang.org/x/tools@master
+go get -d github.com/goki/go-tools/gopls@master github.com/goki/go-tools@master
 
 go install github.com/goki/go-tools/gopls
 ```

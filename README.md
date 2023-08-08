@@ -7,9 +7,9 @@ go install github.com/goki/go-tools/cmd/goimports@latest
 ```
 
 
-[![PkgGoDev](https://pkg.go.dev/badge/golang.org/x/tools)](https://pkg.go.dev/golang.org/x/tools)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/goki/go-tools)](https://pkg.go.dev/github.com/goki/go-tools)
 
-This repository provides the `golang.org/x/tools` module, comprising
+This repository provides the `github.com/goki/go-tools` module, comprising
 various tools and packages mostly for static analysis of Go programs,
 some of which are listed below.
 Use the "Go reference" link above for more information about any package.

@@ -24,9 +24,9 @@ import (
 
 	exec "golang.org/x/sys/execabs"
 
+	"github.com/goki/go-tools/go/packages"
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/semver"
-	"github.com/goki/go-tools/go/packages"
 )
 
 var versionFlag = flag.String("version", "", "version to tag")
@@ -130,16 +130,16 @@ func validateGoModFile(goplsDir string) error {
 		return err
 	}
 	hash := string(stdout)
-	// Find the golang.org/x/tools require line and compare the versions.
+	// Find the github.com/goki/go-tools require line and compare the versions.
 	var version string
 	for _, req := range gomod.Require {
-		if req.Mod.Path == "golang.org/x/tools" {
+		if req.Mod.Path == "github.com/goki/go-tools" {
 			version = req.Mod.Version
 			break
 		}
 	}
 	if version == "" {
-		return fmt.Errorf("no require for golang.org/x/tools")
+		return fmt.Errorf("no require for github.com/goki/go-tools")
 	}
 	split := strings.Split(version, "-")
 	if len(split) != 3 {
@@ -150,7 +150,7 @@ func validateGoModFile(goplsDir string) error {
 		return fmt.Errorf("unexpected pseudoversion format %s", version)
 	}
 	if !strings.HasPrefix(hash, last) {
-		return fmt.Errorf("golang.org/x/tools pseudoversion should be at commit %s, instead got %s", hash, last)
+		return fmt.Errorf("github.com/goki/go-tools pseudoversion should be at commit %s, instead got %s", hash, last)
 	}
 	return nil
 }

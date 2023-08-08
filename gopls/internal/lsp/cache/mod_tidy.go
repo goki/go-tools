@@ -15,7 +15,6 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/mod/modfile"
 	"github.com/goki/go-tools/gopls/internal/lsp/command"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
@@ -24,6 +23,7 @@ import (
 	"github.com/goki/go-tools/internal/event/tag"
 	"github.com/goki/go-tools/internal/gocommand"
 	"github.com/goki/go-tools/internal/memoize"
+	"golang.org/x/mod/modfile"
 )
 
 // ModTidy returns the go.mod file that would be obtained by running
@@ -263,7 +263,7 @@ func missingModuleDiagnostics(ctx context.Context, snapshot *snapshot, pm *sourc
 			//   "github.com/goki/go-tools/go/expect"
 			//   "github.com/goki/go-tools/go/packages"
 			// )
-			// They both are related to the same module: "golang.org/x/tools".
+			// They both are related to the same module: "github.com/goki/go-tools".
 			var match string
 			for _, req := range ideal.Require {
 				if strings.HasPrefix(imp, req.Mod.Path) && len(req.Mod.Path) > len(match) {

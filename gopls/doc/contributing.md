@@ -135,7 +135,7 @@ team if you need help.
 When you mail your CL and you or a fellow contributor assigns the
 `Run-TryBot=1` label in Gerrit, the
 [TryBots](https://golang.org/doc/contribute.html#trybots) will run tests in
-both the `golang.org/x/tools` and `github.com/goki/go-tools/gopls` modules, as
+both the `github.com/goki/go-tools` and `github.com/goki/go-tools/gopls` modules, as
 described above.
 
 Furthermore, an additional "gopls-CI" pass will be run by _Kokoro_, which is a

@@ -12,7 +12,7 @@
 // problems for developer tools that use it, since they must be able to
 // consume the outputs of the gc compiler both before and after a Go
 // update such as from Go 1.7 to Go 1.8.  Because this package lives in
-// golang.org/x/tools, sites can update their version of this repo some
+// github.com/goki/go-tools, sites can update their version of this repo some
 // time before the Go 1.8 release and rebuild and redeploy their
 // developer tools, which will then be able to consume both Go 1.7 and
 // Go 1.8 export data files, so they will work before and after the
