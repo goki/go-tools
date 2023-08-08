@@ -1,6 +1,11 @@
 # Go Tools
 
-**IMPORTANT:** Please see https://goki.dev/docs/general/structfieldcomments/ for information about this repository.
+**IMPORTANT:** Please see https://goki.dev/docs/general/structfieldcomments/ for information about this repository.  Use this command to install `goimports`:
+
+```sh
+go install github.com/goki/go-tools/cmd/goimports@latest
+```
+
 
 [![PkgGoDev](https://pkg.go.dev/badge/golang.org/x/tools)](https://pkg.go.dev/golang.org/x/tools)
 
