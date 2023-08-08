@@ -16,14 +16,14 @@ import (
 	"path"
 	"strings"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/gopls/internal/bug"
-	"golang.org/x/tools/gopls/internal/lsp/analysis/stubmethods"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/safetoken"
-	"golang.org/x/tools/internal/tokeninternal"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/go/analysis"
+	"github.com/goki/go-tools-tools/go/ast/astutil"
+	"github.com/goki/go-tools-tools/gopls/internal/bug"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/analysis/stubmethods"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/safetoken"
+	"github.com/goki/go-tools-tools/internal/tokeninternal"
+	"github.com/goki/go-tools-tools/internal/typeparams"
 )
 
 // stubSuggestedFixFunc returns a suggested fix to declare the missing

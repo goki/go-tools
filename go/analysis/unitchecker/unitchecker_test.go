@@ -13,11 +13,11 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/analysis/passes/assign"
-	"golang.org/x/tools/go/analysis/passes/findcall"
-	"golang.org/x/tools/go/analysis/passes/printf"
-	"golang.org/x/tools/go/analysis/unitchecker"
-	"golang.org/x/tools/go/packages/packagestest"
+	"github.com/goki/go-tools/go/analysis/passes/assign"
+	"github.com/goki/go-tools-tools/go/analysis/passes/findcall"
+	"github.com/goki/go-tools-tools/go/analysis/passes/printf"
+	"github.com/goki/go-tools-tools/go/analysis/unitchecker"
+	"github.com/goki/go-tools-tools/go/packages/packagestest"
 )
 
 func TestMain(m *testing.M) {

@@ -7,9 +7,9 @@ package lsp
 import (
 	"context"
 
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/internal/event"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/internal/event"
 )
 
 func (s *Server) prepareCallHierarchy(ctx context.Context, params *protocol.CallHierarchyPrepareParams) ([]protocol.CallHierarchyItem, error) {

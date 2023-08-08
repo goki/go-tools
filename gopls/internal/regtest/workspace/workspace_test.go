@@ -11,15 +11,15 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/bug"
-	"golang.org/x/tools/gopls/internal/hooks"
-	"golang.org/x/tools/gopls/internal/lsp"
-	"golang.org/x/tools/gopls/internal/lsp/fake"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/gopls/internal/bug"
+	"github.com/goki/go-tools-tools/gopls/internal/hooks"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/fake"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/internal/gocommand"
+	"github.com/goki/go-tools-tools/internal/testenv"
 
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
+	. "github.com/goki/go-tools-tools/gopls/internal/lsp/regtest"
 )
 
 func TestMain(m *testing.M) {

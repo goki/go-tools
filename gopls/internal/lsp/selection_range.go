@@ -7,10 +7,10 @@ package lsp
 import (
 	"context"
 
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/internal/event"
+	"github.com/goki/go-tools/go/ast/astutil"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/internal/event"
 )
 
 // selectionRange defines the textDocument/selectionRange feature,

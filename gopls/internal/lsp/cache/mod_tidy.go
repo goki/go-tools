@@ -16,14 +16,14 @@ import (
 	"strings"
 
 	"golang.org/x/mod/modfile"
-	"golang.org/x/tools/gopls/internal/lsp/command"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/event/tag"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/memoize"
+	"github.com/goki/go-tools/gopls/internal/lsp/command"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"github.com/goki/go-tools-tools/internal/event"
+	"github.com/goki/go-tools-tools/internal/event/tag"
+	"github.com/goki/go-tools-tools/internal/gocommand"
+	"github.com/goki/go-tools-tools/internal/memoize"
 )
 
 // ModTidy returns the go.mod file that would be obtained by running
@@ -260,10 +260,10 @@ func missingModuleDiagnostics(ctx context.Context, snapshot *snapshot, pm *sourc
 			// Example:
 			//
 			// import (
-			//   "golang.org/x/tools/go/expect"
-			//   "golang.org/x/tools/go/packages"
+			//   "github.com/goki/go-tools-tools/go/expect"
+			//   "github.com/goki/go-tools-tools/go/packages"
 			// )
-			// They both are related to the same module: "golang.org/x/tools".
+			// They both are related to the same module: "github.com/goki/go-tools-tools".
 			var match string
 			for _, req := range ideal.Require {
 				if strings.HasPrefix(imp, req.Mod.Path) && len(req.Mod.Path) > len(match) {

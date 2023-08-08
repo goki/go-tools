@@ -22,17 +22,17 @@ import (
 
 	exec "golang.org/x/sys/execabs"
 
-	"golang.org/x/tools/gopls/internal/lsp/cache"
-	"golang.org/x/tools/gopls/internal/lsp/debug"
-	"golang.org/x/tools/gopls/internal/lsp/fake"
-	"golang.org/x/tools/gopls/internal/lsp/lsprpc"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/internal/jsonrpc2"
-	"golang.org/x/tools/internal/jsonrpc2/servertest"
-	"golang.org/x/tools/internal/memoize"
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/internal/xcontext"
+	"github.com/goki/go-tools/gopls/internal/lsp/cache"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/debug"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/fake"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/lsprpc"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/internal/jsonrpc2"
+	"github.com/goki/go-tools-tools/internal/jsonrpc2/servertest"
+	"github.com/goki/go-tools-tools/internal/memoize"
+	"github.com/goki/go-tools-tools/internal/testenv"
+	"github.com/goki/go-tools-tools/internal/xcontext"
 )
 
 // Mode is a bitmask that defines for which execution modes a test should run.

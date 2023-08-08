@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/imports"
+	"github.com/goki/go-tools/internal/event"
+	"github.com/goki/go-tools-tools/internal/imports"
 )
 
 // KnownPackagePaths returns a new list of package paths of all known

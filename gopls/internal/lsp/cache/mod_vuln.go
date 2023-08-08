@@ -8,11 +8,11 @@ import (
 	"context"
 	"os"
 
-	"golang.org/x/tools/gopls/internal/govulncheck"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/gopls/internal/vulncheck"
-	"golang.org/x/tools/internal/memoize"
+	"github.com/goki/go-tools/gopls/internal/govulncheck"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"github.com/goki/go-tools-tools/gopls/internal/vulncheck"
+	"github.com/goki/go-tools-tools/internal/memoize"
 )
 
 // ModVuln returns import vulnerability analysis for the given go.mod URI.

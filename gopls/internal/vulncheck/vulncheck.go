@@ -11,9 +11,9 @@ package vulncheck
 import (
 	"context"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/govulncheck"
-	"golang.org/x/tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools/go/packages"
+	"github.com/goki/go-tools-tools/gopls/internal/govulncheck"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
 )
 
 // With go1.18+, this is swapped with the real implementation.

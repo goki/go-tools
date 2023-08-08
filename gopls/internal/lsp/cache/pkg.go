@@ -13,10 +13,10 @@ import (
 	"go/types"
 	"sync"
 
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/lsp/source/methodsets"
-	"golang.org/x/tools/gopls/internal/lsp/source/xrefs"
-	"golang.org/x/tools/gopls/internal/span"
+	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source/methodsets"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source/xrefs"
+	"github.com/goki/go-tools-tools/gopls/internal/span"
 )
 
 // Convenient local aliases for typed strings.

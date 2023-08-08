@@ -7,13 +7,13 @@ package lsp
 import (
 	"context"
 
-	"golang.org/x/tools/gopls/internal/lsp/mod"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/lsp/template"
-	"golang.org/x/tools/gopls/internal/lsp/work"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/event/tag"
+	"github.com/goki/go-tools/gopls/internal/lsp/mod"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/template"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/work"
+	"github.com/goki/go-tools-tools/internal/event"
+	"github.com/goki/go-tools-tools/internal/event/tag"
 )
 
 func (s *Server) hover(ctx context.Context, params *protocol.HoverParams) (*protocol.Hover, error) {

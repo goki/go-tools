@@ -16,12 +16,12 @@ import (
 	"strings"
 	"text/scanner"
 
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/safetoken"
-	"golang.org/x/tools/internal/diff"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/imports"
-	"golang.org/x/tools/internal/tokeninternal"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/safetoken"
+	"github.com/goki/go-tools-tools/internal/diff"
+	"github.com/goki/go-tools-tools/internal/event"
+	"github.com/goki/go-tools-tools/internal/imports"
+	"github.com/goki/go-tools-tools/internal/tokeninternal"
 )
 
 // Format formats a file with a given range.

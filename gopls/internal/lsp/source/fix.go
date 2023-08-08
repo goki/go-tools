@@ -11,14 +11,14 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/gopls/internal/bug"
-	"golang.org/x/tools/gopls/internal/lsp/analysis/embeddirective"
-	"golang.org/x/tools/gopls/internal/lsp/analysis/fillstruct"
-	"golang.org/x/tools/gopls/internal/lsp/analysis/undeclaredname"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/imports"
+	"github.com/goki/go-tools/go/analysis"
+	"github.com/goki/go-tools-tools/gopls/internal/bug"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/analysis/embeddirective"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/analysis/fillstruct"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/analysis/undeclaredname"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"github.com/goki/go-tools-tools/internal/imports"
 )
 
 type (

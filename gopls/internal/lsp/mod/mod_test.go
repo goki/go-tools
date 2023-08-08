@@ -10,11 +10,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/lsp/cache"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/lsp/tests"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/gopls/internal/lsp/cache"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/tests"
+	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"github.com/goki/go-tools-tools/internal/testenv"
 )
 
 func TestMain(m *testing.M) {

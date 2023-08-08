@@ -15,15 +15,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/bug"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/event/tag"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/packagesinternal"
+	"github.com/goki/go-tools/go/packages"
+	"github.com/goki/go-tools-tools/gopls/internal/bug"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"github.com/goki/go-tools-tools/internal/event"
+	"github.com/goki/go-tools-tools/internal/event/tag"
+	"github.com/goki/go-tools-tools/internal/gocommand"
+	"github.com/goki/go-tools-tools/internal/packagesinternal"
 )
 
 var loadID uint64 // atomic identifier for loads

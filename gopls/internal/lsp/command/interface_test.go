@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/gopls/internal/lsp/command/gen"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/gopls/internal/lsp/command/gen"
+	"github.com/goki/go-tools-tools/internal/testenv"
 )
 
 func TestGenerated(t *testing.T) {

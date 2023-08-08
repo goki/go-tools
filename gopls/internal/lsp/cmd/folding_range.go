@@ -9,9 +9,9 @@ import (
 	"flag"
 	"fmt"
 
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/tool"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"github.com/goki/go-tools-tools/internal/tool"
 )
 
 // foldingRanges implements the folding_ranges verb for gopls

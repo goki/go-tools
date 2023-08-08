@@ -12,12 +12,12 @@ import (
 	"path/filepath"
 	"sync"
 
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/event/tag"
-	"golang.org/x/tools/internal/jsonrpc2"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"github.com/goki/go-tools-tools/internal/event"
+	"github.com/goki/go-tools-tools/internal/event/tag"
+	"github.com/goki/go-tools-tools/internal/jsonrpc2"
 )
 
 // ModificationSource identifies the originating cause of a file modification.

@@ -9,10 +9,10 @@ import (
 	"fmt"
 	"go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/buildssa"
-	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
-	"golang.org/x/tools/go/ssa"
+	"github.com/goki/go-tools/go/analysis"
+	"github.com/goki/go-tools-tools/go/analysis/passes/buildssa"
+	"github.com/goki/go-tools-tools/go/analysis/passes/internal/analysisutil"
+	"github.com/goki/go-tools-tools/go/ssa"
 )
 
 //go:embed doc.go
@@ -23,7 +23,7 @@ var doc string
 var Analyzer = &analysis.Analyzer{
 	Name:     "unusedwrite",
 	Doc:      analysisutil.MustExtractDoc(doc, "unusedwrite"),
-	URL:      "https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/unusedwrite",
+	URL:      "https://pkg.go.dev/github.com/goki/go-tools-tools/go/analysis/passes/unusedwrite",
 	Requires: []*analysis.Analyzer{buildssa.Analyzer},
 	Run:      run,
 }

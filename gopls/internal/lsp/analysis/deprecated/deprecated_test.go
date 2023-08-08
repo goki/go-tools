@@ -7,8 +7,8 @@ package deprecated
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/go/analysis/analysistest"
+	"github.com/goki/go-tools-tools/internal/testenv"
 )
 
 func Test(t *testing.T) {

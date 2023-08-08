@@ -7,8 +7,8 @@ package misc
 import (
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
-	"golang.org/x/tools/gopls/internal/lsp/tests/compare"
+	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/tests/compare"
 )
 
 // This is a slight variant of TestHoverOnError in definition_test.go

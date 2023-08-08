@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/gopls/internal/lsp"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/gopls/internal/lsp"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
 )
 
 var (

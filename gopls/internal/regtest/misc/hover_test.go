@@ -9,10 +9,10 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/lsp/fake"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/gopls/internal/lsp/fake"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	. "github.com/goki/go-tools-tools/gopls/internal/lsp/regtest"
+	"github.com/goki/go-tools-tools/internal/testenv"
 )
 
 func TestHoverUnexported(t *testing.T) {
@@ -352,7 +352,7 @@ package main
 var A int
 // [fmt.Println]
 var B int
-// [golang.org/x/tools/go/packages.Package.String]
+// [github.com/goki/go-tools-tools/go/packages.Package.String]
 var C int
 `
 	var tests = []struct {
@@ -361,7 +361,7 @@ var C int
 	}{
 		{"A", "fmt"},
 		{"B", "fmt#Println"},
-		{"C", "golang.org/x/tools/go/packages#Package.String"},
+		{"C", "github.com/goki/go-tools-tools/go/packages#Package.String"},
 	}
 	for _, test := range tests {
 		Run(t, input, func(t *testing.T, env *Env) {

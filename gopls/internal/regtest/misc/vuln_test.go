@@ -17,15 +17,15 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"golang.org/x/tools/gopls/internal/govulncheck"
-	"golang.org/x/tools/gopls/internal/lsp/command"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/lsp/tests/compare"
-	"golang.org/x/tools/gopls/internal/vulncheck"
-	"golang.org/x/tools/gopls/internal/vulncheck/vulntest"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/gopls/internal/govulncheck"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/command"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	. "github.com/goki/go-tools-tools/gopls/internal/lsp/regtest"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/tests/compare"
+	"github.com/goki/go-tools-tools/gopls/internal/vulncheck"
+	"github.com/goki/go-tools-tools/gopls/internal/vulncheck/vulntest"
+	"github.com/goki/go-tools-tools/internal/testenv"
 )
 
 func TestRunGovulncheckError(t *testing.T) {

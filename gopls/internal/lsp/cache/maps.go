@@ -5,9 +5,9 @@
 package cache
 
 import (
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/persistent"
+	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"github.com/goki/go-tools-tools/internal/persistent"
 )
 
 // TODO(euroelessar): Use generics once support for go1.17 is dropped.

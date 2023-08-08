@@ -22,9 +22,9 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/types/objectpath"
-	"golang.org/x/tools/internal/tokeninternal"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/go/types/objectpath"
+	"github.com/goki/go-tools-tools/internal/tokeninternal"
+	"github.com/goki/go-tools-tools/internal/typeparams"
 )
 
 // IExportShallow encodes "shallow" export data for the specified package.

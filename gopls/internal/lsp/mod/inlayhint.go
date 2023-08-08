@@ -8,8 +8,8 @@ import (
 	"fmt"
 
 	"golang.org/x/mod/modfile"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
 )
 
 func InlayHint(ctx context.Context, snapshot source.Snapshot, fh source.FileHandle, rng protocol.Range) ([]protocol.InlayHint, error) {

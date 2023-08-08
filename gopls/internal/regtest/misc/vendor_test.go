@@ -7,9 +7,9 @@ package misc
 import (
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
+	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
 
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
 )
 
 const basicProxy = `

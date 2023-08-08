@@ -11,11 +11,11 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/astutil"
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/gopls/internal/span"
-	"golang.org/x/tools/internal/memoize"
+	"github.com/goki/go-tools/gopls/internal/astutil"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/gopls/internal/span"
+	"github.com/goki/go-tools-tools/internal/memoize"
 )
 
 // symbolize returns the result of symbolizing the file identified by uri, using a cache.

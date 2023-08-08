@@ -11,10 +11,10 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/astutil"
-	"golang.org/x/tools/gopls/internal/lsp/frob"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/gopls/internal/astutil"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/frob"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/internal/typeparams"
 )
 
 // Encode analyzes the Go syntax trees of a package, constructs a

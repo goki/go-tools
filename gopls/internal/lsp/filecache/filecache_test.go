@@ -22,8 +22,8 @@ import (
 	"testing"
 
 	"golang.org/x/sync/errgroup"
-	"golang.org/x/tools/gopls/internal/lsp/filecache"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/gopls/internal/lsp/filecache"
+	"github.com/goki/go-tools-tools/internal/testenv"
 )
 
 func TestBasics(t *testing.T) {

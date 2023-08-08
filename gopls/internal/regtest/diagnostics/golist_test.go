@@ -7,9 +7,9 @@ package diagnostics
 import (
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
-	"golang.org/x/tools/gopls/internal/lsp/source"
-	"golang.org/x/tools/internal/testenv"
+	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
+	"github.com/goki/go-tools-tools/gopls/internal/lsp/source"
+	"github.com/goki/go-tools-tools/internal/testenv"
 )
 
 func TestGoListErrors(t *testing.T) {
