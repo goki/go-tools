@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/goki/go-tools/go/packages"
+	"github.com/goki/go-tools/go/ssa"
+	"github.com/goki/go-tools/go/ssa/ssautil"
+	"github.com/goki/go-tools/internal/testenv"
 )
 
 func bytesAllocated() uint64 {

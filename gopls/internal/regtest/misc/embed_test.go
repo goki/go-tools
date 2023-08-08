@@ -6,7 +6,7 @@ package misc
 import (
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
+	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
 )
 
 func TestMissingPatternDiagnostic(t *testing.T) {

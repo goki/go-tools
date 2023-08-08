@@ -8,7 +8,7 @@ import (
 	"context"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/lsp/protocol"
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 )
 
 const exampleProgram = `

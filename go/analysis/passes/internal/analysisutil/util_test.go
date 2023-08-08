@@ -11,8 +11,8 @@ import (
 	"go/types"
 	"testing"
 
-	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/go/analysis/passes/internal/analysisutil"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 func TestHasSideEffects(t *testing.T) {

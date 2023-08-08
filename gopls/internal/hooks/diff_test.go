@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"golang.org/x/tools/internal/diff/difftest"
+	"github.com/goki/go-tools/internal/diff/difftest"
 )
 
 func TestDiff(t *testing.T) {

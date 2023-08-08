@@ -31,7 +31,7 @@ import (
 	"strings"
 	_ "unsafe"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 // A Path is an opaque name that identifies a types.Object
@@ -127,7 +127,7 @@ type Encoder struct {
 	skipMethodSorting bool
 }
 
-// Exposed to gopls via golang.org/x/tools/internal/typesinternal
+// Exposed to gopls via github.com/goki/go-tools/internal/typesinternal
 // TODO(golang/go#61443): eliminate this parameter one way or the other.
 //
 //go:linkname skipMethodSorting

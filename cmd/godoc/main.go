@@ -40,13 +40,13 @@ import (
 
 	exec "golang.org/x/sys/execabs"
 
-	"golang.org/x/tools/godoc"
-	"golang.org/x/tools/godoc/static"
-	"golang.org/x/tools/godoc/vfs"
-	"golang.org/x/tools/godoc/vfs/gatefs"
-	"golang.org/x/tools/godoc/vfs/mapfs"
-	"golang.org/x/tools/godoc/vfs/zipfs"
-	"golang.org/x/tools/internal/gocommand"
+	"github.com/goki/go-tools/godoc"
+	"github.com/goki/go-tools/godoc/static"
+	"github.com/goki/go-tools/godoc/vfs"
+	"github.com/goki/go-tools/godoc/vfs/gatefs"
+	"github.com/goki/go-tools/godoc/vfs/mapfs"
+	"github.com/goki/go-tools/godoc/vfs/zipfs"
+	"github.com/goki/go-tools/internal/gocommand"
 )
 
 const defaultAddr = "localhost:6060" // default webserver address

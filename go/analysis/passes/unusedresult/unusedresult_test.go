@@ -7,9 +7,9 @@ package unusedresult_test
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/analysis/passes/unusedresult"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/go/analysis/analysistest"
+	"github.com/goki/go-tools/go/analysis/passes/unusedresult"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 func Test(t *testing.T) {

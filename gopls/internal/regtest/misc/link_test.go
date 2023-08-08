@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/lsp/regtest"
+	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
 )
 
 func TestHoverAndDocumentLink(t *testing.T) {

@@ -15,8 +15,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/goki/go-tools/go/loader"
+	"github.com/goki/go-tools/internal/typeparams"
 )
 
 // loadProgram creates loader.Program out of p.
