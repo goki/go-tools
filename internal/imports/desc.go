@@ -11,8 +11,6 @@ import (
 	"reflect"
 	"regexp"
 	"strings"
-
-	"golang.org/x/exp/slices"
 )
 
 // This file modifies the fixImports function to also
@@ -63,9 +61,6 @@ func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *Pro
 					for _, c := range field.Doc.List {
 						c.Text = metadataRegexp.ReplaceAllString(c.Text, "")
 					}
-					slices.DeleteFunc(field.Doc.List, func(c *ast.Comment) bool {
-						return c.Text == ""
-					})
 					if cm[field] == nil {
 						cm[field] = make([]*ast.CommentGroup, 1)
 					}
