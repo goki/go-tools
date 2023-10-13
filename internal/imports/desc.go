@@ -9,6 +9,7 @@ import (
 	"go/token"
 	"os"
 	"reflect"
+	"regexp"
 	"strings"
 )
 
@@ -24,6 +25,8 @@ func init() {
 		return addDescComments(fset, f, filename, env)
 	}
 }
+
+var metadataRegexp = regexp.MustCompile(`\[.*?\] ?`)
 
 // addDescComments adds a comment to all struct fields with a 'desc' tag.
 func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *ProcessEnv) error {
@@ -51,6 +54,17 @@ func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *Pro
 					} else {
 						field.Tag.Value = "`" + tv + "`"
 					}
+
+					if field.Doc == nil {
+						continue
+					}
+					for _, c := range field.Doc.List {
+						c.Text = metadataRegexp.ReplaceAllString(c.Text, "")
+					}
+					if cm[field] == nil {
+						cm[field] = make([]*ast.CommentGroup, 1)
+					}
+					cm[field][len(cm[field])-1] = field.Doc
 					continue
 				}
 
