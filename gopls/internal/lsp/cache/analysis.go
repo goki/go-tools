@@ -28,7 +28,6 @@ import (
 	"sync/atomic"
 	"time"
 
-	"golang.org/x/sync/errgroup"
 	"github.com/goki/go-tools/go/analysis"
 	"github.com/goki/go-tools/gopls/internal/bug"
 	"github.com/goki/go-tools/gopls/internal/lsp/filecache"
@@ -42,6 +41,7 @@ import (
 	"github.com/goki/go-tools/internal/gcimporter"
 	"github.com/goki/go-tools/internal/typeparams"
 	"github.com/goki/go-tools/internal/typesinternal"
+	"golang.org/x/sync/errgroup"
 )
 
 /*

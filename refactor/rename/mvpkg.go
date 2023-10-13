@@ -18,7 +18,6 @@ import (
 	"go/build"
 	"go/format"
 	"go/token"
-	exec "golang.org/x/sys/execabs"
 	"log"
 	"os"
 	"path"
@@ -28,6 +27,8 @@ import (
 	"strconv"
 	"strings"
 	"text/template"
+
+	exec "golang.org/x/sys/execabs"
 
 	"github.com/goki/go-tools/go/buildutil"
 	"github.com/goki/go-tools/go/loader"

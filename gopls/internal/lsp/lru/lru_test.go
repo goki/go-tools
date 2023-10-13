@@ -13,8 +13,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/sync/errgroup"
 	"github.com/goki/go-tools/gopls/internal/lsp/lru"
+	"golang.org/x/sync/errgroup"
 )
 
 type any = interface{} // TODO: remove once gopls only builds at go1.18+

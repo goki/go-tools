@@ -7,11 +7,11 @@ package misc
 import (
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/lsp/command"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
 	"github.com/goki/go-tools/gopls/internal/lsp/tests/compare"
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestAddImport(t *testing.T) {

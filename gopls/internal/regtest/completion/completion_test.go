@@ -10,13 +10,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/bug"
 	"github.com/goki/go-tools/gopls/internal/hooks"
 	"github.com/goki/go-tools/gopls/internal/lsp/fake"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
 	"github.com/goki/go-tools/internal/testenv"
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestMain(m *testing.M) {

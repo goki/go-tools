@@ -13,7 +13,6 @@ import (
 	"flag"
 	"fmt"
 	"go/build"
-	exec "golang.org/x/sys/execabs"
 	"io/ioutil"
 	"log"
 	"os"
@@ -21,6 +20,8 @@ import (
 	"regexp"
 	"runtime"
 	"strings"
+
+	exec "golang.org/x/sys/execabs"
 )
 
 var (

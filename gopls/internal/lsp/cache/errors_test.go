@@ -9,10 +9,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
 	"github.com/goki/go-tools/gopls/internal/span"
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestParseErrorMessage(t *testing.T) {

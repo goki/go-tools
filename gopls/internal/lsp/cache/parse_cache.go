@@ -16,11 +16,11 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/sync/errgroup"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
 	"github.com/goki/go-tools/gopls/internal/span"
 	"github.com/goki/go-tools/internal/memoize"
 	"github.com/goki/go-tools/internal/tokeninternal"
+	"golang.org/x/sync/errgroup"
 )
 
 // This file contains an implementation of an LRU parse cache, that offsets the

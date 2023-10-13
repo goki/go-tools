@@ -18,10 +18,10 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/mod/module"
 	"github.com/goki/go-tools/internal/event"
 	"github.com/goki/go-tools/internal/gocommand"
 	"github.com/goki/go-tools/internal/gopathwalk"
+	"golang.org/x/mod/module"
 )
 
 // ModuleResolver implements resolver for modules using the go command as little

@@ -15,13 +15,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
-	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
 	"github.com/goki/go-tools/gopls/internal/lsp/source/completion"
 	"github.com/goki/go-tools/gopls/internal/lsp/tests/compare"
 	"github.com/goki/go-tools/gopls/internal/span"
+	"github.com/google/go-cmp/cmp"
+	"github.com/google/go-cmp/cmp/cmpopts"
 )
 
 var builtins = map[string]bool{

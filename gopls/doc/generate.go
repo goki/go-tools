@@ -30,7 +30,6 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/jba/printsrc"
 	"github.com/goki/go-tools/go/ast/astutil"
 	"github.com/goki/go-tools/go/packages"
 	"github.com/goki/go-tools/gopls/internal/lsp/command"
@@ -38,6 +37,7 @@ import (
 	"github.com/goki/go-tools/gopls/internal/lsp/mod"
 	"github.com/goki/go-tools/gopls/internal/lsp/safetoken"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/jba/printsrc"
 )
 
 func main() {

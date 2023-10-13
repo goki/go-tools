@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/internal/event"
 	"github.com/goki/go-tools/internal/gocommand"
 	jsonrpc2_v2 "github.com/goki/go-tools/internal/jsonrpc2_v2"
-	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 )
 
 func GoEnvMiddleware() (Middleware, error) {

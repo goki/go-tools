@@ -19,11 +19,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jba/templatecheck"
 	"github.com/goki/go-tools/go/packages"
 	"github.com/goki/go-tools/gopls/internal/lsp/cache"
 	"github.com/goki/go-tools/gopls/internal/lsp/debug"
 	"github.com/goki/go-tools/internal/testenv"
+	"github.com/jba/templatecheck"
 )
 
 var templates = map[string]struct {

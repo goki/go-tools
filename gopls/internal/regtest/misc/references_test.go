@@ -13,11 +13,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/regtest"
 	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
 	"github.com/goki/go-tools/internal/testenv"
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestStdlibReferences(t *testing.T) {

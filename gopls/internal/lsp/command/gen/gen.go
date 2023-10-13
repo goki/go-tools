@@ -12,8 +12,8 @@ import (
 	"go/types"
 	"text/template"
 
-	"github.com/goki/go-tools/internal/imports"
 	"github.com/goki/go-tools/gopls/internal/lsp/command/commandmeta"
+	"github.com/goki/go-tools/internal/imports"
 )
 
 const src = `// Copyright 2021 The Go Authors. All rights reserved.

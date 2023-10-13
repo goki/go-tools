@@ -21,7 +21,6 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/mod/modfile"
 	"github.com/goki/go-tools/go/ast/astutil"
 	"github.com/goki/go-tools/gopls/internal/bug"
 	"github.com/goki/go-tools/gopls/internal/govulncheck"
@@ -37,6 +36,7 @@ import (
 	"github.com/goki/go-tools/internal/gocommand"
 	"github.com/goki/go-tools/internal/tokeninternal"
 	"github.com/goki/go-tools/internal/xcontext"
+	"golang.org/x/mod/modfile"
 )
 
 func (s *Server) executeCommand(ctx context.Context, params *protocol.ExecuteCommandParams) (interface{}, error) {

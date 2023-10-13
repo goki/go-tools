@@ -1,9 +1,13 @@
 package initial
 
-import _ "fmt"
-import renamedfmt "fmt"
-import renamedfmt2 "fmt"
-import . "fmt"
+import (
+	_ "fmt"
+	renamedfmt "fmt"
+
+	renamedfmt2 "fmt"
+
+	. "fmt"
+)
 
 func baz() {
 	renamedfmt.Println()

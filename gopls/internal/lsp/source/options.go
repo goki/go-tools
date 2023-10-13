@@ -431,7 +431,7 @@ type DiagnosticOptions struct {
 
 	// Staticcheck enables additional analyses from staticcheck.io.
 	// These analyses are documented on
-	// [Staticcheck's website](https://staticcheck.io/docs/checks/).
+	// (https://staticcheck.io/docs/checks/).
 	Staticcheck bool `status:"experimental"`
 
 	// Annotations specifies the various kinds of optimization diagnostics
@@ -464,7 +464,7 @@ type DiagnosticOptions struct {
 type InlayHintOptions struct {
 	// Hints specify inlay hints that users want to see. A full list of hints
 	// that gopls uses can be found in
-	// [inlayHints.md](https://github.com/golang/tools/blob/master/gopls/doc/inlayHints.md).
+	// (https://github.com/golang/tools/blob/master/gopls/doc/inlayHints.md).
 	Hints map[string]bool `status:"experimental"`
 }
 

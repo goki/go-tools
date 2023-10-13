@@ -48,9 +48,9 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/goki/go-tools/internal/edit"
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"
-	"github.com/goki/go-tools/internal/edit"
 )
 
 func usage() {

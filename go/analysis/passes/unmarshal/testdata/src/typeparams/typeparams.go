@@ -12,7 +12,7 @@ func unmarshalT[T any](data []byte) T {
 }
 
 func unmarshalT2[T any](data []byte, t T) {
-    json.Unmarshal(data, t)
+	json.Unmarshal(data, t)
 }
 
 func main() {

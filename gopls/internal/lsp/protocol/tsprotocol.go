@@ -228,13 +228,13 @@ type CodeAction struct {
 	//
 	// Clients should follow the following guidelines regarding disabled code actions:
 	//
-	//   - Disabled code actions are not shown in automatic [lightbulbs](https://code.visualstudio.com/docs/editor/editingevolved#_code-action)
+	//   - Disabled code actions are not shown in automatic (https://code.visualstudio.com/docs/editor/editingevolved#_code-action)
 	//     code action menus.
 	//
 	//   - Disabled actions are shown as faded out in the code action menu when the user requests a more specific type
 	//     of code action, such as refactorings.
 	//
-	//   - If the user has a [keybinding](https://code.visualstudio.com/docs/editor/refactoring#_keybindings-for-code-actions)
+	//   - If the user has a (https://code.visualstudio.com/docs/editor/refactoring#_keybindings-for-code-actions)
 	//     that auto applies a code action and only disabled code actions are returned, the client should show the user an
 	//     error message with `reason` in the editor.
 	//
@@ -372,7 +372,7 @@ type CodeLens struct {
 	// The command this code lens represents.
 	Command *Command `json:"command,omitempty"`
 	// A data entry field that is preserved on a code lens item between
-	// a {@link CodeLensRequest} and a [CodeLensResolveRequest]
+	// a {@link CodeLensRequest} and a
 	// (#CodeLensResolveRequest)
 	Data interface{} `json:"data,omitempty"`
 }
@@ -418,13 +418,13 @@ type CodeLensWorkspaceClientCapabilities struct {
 
 // Represents a color in RGBA space.
 type Color struct {
-	// The red component of this color in the range [0-1].
+	// The red component of this color in the range .
 	Red float64 `json:"red"`
-	// The green component of this color in the range [0-1].
+	// The green component of this color in the range .
 	Green float64 `json:"green"`
-	// The blue component of this color in the range [0-1].
+	// The blue component of this color in the range .
 	Blue float64 `json:"blue"`
-	// The alpha component of this color in the range [0-1].
+	// The alpha component of this color in the range .
 	Alpha float64 `json:"alpha"`
 }
 
@@ -590,7 +590,7 @@ type CompletionItem struct {
 	// property.
 	//
 	// *Note 1:* The text edit's range as well as both ranges from an insert
-	// replace edit must be a [single line] and they must contain the position
+	// replace edit must be a and they must contain the position
 	// at which completion has been requested.
 	// *Note 2:* If an `InsertReplaceEdit` is returned the edit's insert range
 	// must be a prefix of the edit's replace range, that means it must be
@@ -1652,8 +1652,8 @@ type FileOperationPattern struct {
 	//  - `?` to match on one character in a path segment
 	//  - `**` to match any number of path segments, including none
 	//  - `{}` to group sub patterns into an OR expression. (e.g. `**​/*.{ts,js}` matches all TypeScript and JavaScript files)
-	//  - `[]` to declare a range of characters to match in a path segment (e.g., `example.[0-9]` to match on `example.0`, `example.1`, …)
-	//  - `[!...]` to negate a range of characters to match in a path segment (e.g., `example.[!0-9]` to match on `example.a`, `example.b`, but not `example.0`)
+	//  - `` to declare a range of characters to match in a path segment (e.g., `example.` to match on `example.0`, `example.1`, …)
+	//  - `` to negate a range of characters to match in a path segment (e.g., `example.` to match on `example.a`, `example.b`, but not `example.0`)
 	Glob string `json:"glob"`
 	// Whether to match files or folders with this pattern.
 	//
@@ -1835,7 +1835,7 @@ type GeneralClientCapabilities struct {
 	// servers can assume that the client supports UTF-16. UTF-16 is
 	// therefore a mandatory encoding.
 	//
-	// If omitted it defaults to ['utf-16'].
+	// If omitted it defaults to .
 	//
 	// Implementation considerations: since the conversion from one encoding
 	// into another requires the content of the file / line the conversion
@@ -4155,7 +4155,7 @@ type SignatureHelp struct {
 	// mandatory to better express this.
 	ActiveSignature uint32 `json:"activeSignature,omitempty"`
 	// The active parameter of the active signature. If omitted or the value
-	// lies outside the range of `signatures[activeSignature].parameters`
+	// lies outside the range of `signatures.parameters`
 	// defaults to 0 if the active signature has parameters. If
 	// the active signature has no parameters it is ignored.
 	// In future version of the protocol this property might become
@@ -4759,7 +4759,7 @@ type WorkDoneProgressBegin struct {
 	// to ignore the `percentage` value in subsequent in report notifications.
 	//
 	// The value should be steadily rising. Clients are free to ignore values
-	// that are not following this rule. The value range is [0, 100].
+	// that are not following this rule. The value range is .
 	Percentage uint32 `json:"percentage,omitempty"`
 }
 type WorkDoneProgressCancelParams struct {
@@ -4807,7 +4807,7 @@ type WorkDoneProgressReport struct {
 	// to ignore the `percentage` value in subsequent in report notifications.
 	//
 	// The value should be steadily rising. Clients are free to ignore values
-	// that are not following this rule. The value range is [0, 100]
+	// that are not following this rule. The value range is
 	Percentage uint32 `json:"percentage,omitempty"`
 }
 

@@ -10,10 +10,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"golang.org/x/mod/modfile"
 	"github.com/goki/go-tools/gopls/internal/lsp/command"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"golang.org/x/mod/modfile"
 )
 
 // LensFuncs returns the supported lensFuncs for go.mod files.

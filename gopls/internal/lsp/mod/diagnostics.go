@@ -14,15 +14,15 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/mod/modfile"
-	"golang.org/x/mod/semver"
-	"golang.org/x/sync/errgroup"
 	"github.com/goki/go-tools/gopls/internal/govulncheck"
 	"github.com/goki/go-tools/gopls/internal/lsp/command"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
 	"github.com/goki/go-tools/gopls/internal/span"
 	"github.com/goki/go-tools/internal/event"
+	"golang.org/x/mod/modfile"
+	"golang.org/x/mod/semver"
+	"golang.org/x/sync/errgroup"
 	"golang.org/x/vuln/osv"
 )
 

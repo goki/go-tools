@@ -14,7 +14,6 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/bug"
 	"github.com/goki/go-tools/gopls/internal/lsp/cache"
 	"github.com/goki/go-tools/gopls/internal/lsp/command"
@@ -25,6 +24,7 @@ import (
 	"github.com/goki/go-tools/gopls/internal/lsp/tests/compare"
 	"github.com/goki/go-tools/gopls/internal/span"
 	"github.com/goki/go-tools/internal/testenv"
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestMain(m *testing.M) {

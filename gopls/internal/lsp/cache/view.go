@@ -22,9 +22,6 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/mod/modfile"
-	"golang.org/x/mod/semver"
-	exec "golang.org/x/sys/execabs"
 	"github.com/goki/go-tools/gopls/internal/govulncheck"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
@@ -33,6 +30,9 @@ import (
 	"github.com/goki/go-tools/internal/gocommand"
 	"github.com/goki/go-tools/internal/imports"
 	"github.com/goki/go-tools/internal/xcontext"
+	"golang.org/x/mod/modfile"
+	"golang.org/x/mod/semver"
+	exec "golang.org/x/sys/execabs"
 )
 
 type View struct {

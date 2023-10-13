@@ -114,10 +114,14 @@ type Implements struct {
 	AssignableFromPtr []ImplementsType `json:"fromptr,omitempty"` // interface types assignable only from *T
 
 	// The following fields are set only if the query was a method.
-	// Assignable{To,From,FromPtr}Method[i] is the corresponding
-	// method of type Assignable{To,From,FromPtr}[i], or blank
+	// Assignable{To,From,FromPtr}Methodis the corresponding
+	// method of type Assignable{To,From,FromPtr}, or blank
 	// {"",""} if that type lacks the method.
-	Method                  *DescribeMethod  `json:"method,omitempty"` //  the queried method
+	// The following fields are set only if the query was a method.
+	// Assignable{To,From,FromPtr}Methodis the corresponding
+	// method of type Assignable{To,From,FromPtr}, or blank
+	// {"",""} if that type lacks the method.
+	Method                  *DescribeMethod  `json:"method,omitempty"`
 	AssignableToMethod      []DescribeMethod `json:"to_method,omitempty"`
 	AssignableFromMethod    []DescribeMethod `json:"from_method,omitempty"`
 	AssignableFromPtrMethod []DescribeMethod `json:"fromptr_method,omitempty"`

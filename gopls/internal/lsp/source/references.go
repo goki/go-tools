@@ -23,7 +23,6 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/sync/errgroup"
 	"github.com/goki/go-tools/go/types/objectpath"
 	"github.com/goki/go-tools/gopls/internal/bug"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
@@ -31,6 +30,7 @@ import (
 	"github.com/goki/go-tools/gopls/internal/lsp/source/methodsets"
 	"github.com/goki/go-tools/gopls/internal/span"
 	"github.com/goki/go-tools/internal/event"
+	"golang.org/x/sync/errgroup"
 )
 
 // References returns a list of all references (sorted with

@@ -11,8 +11,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
+	"github.com/google/go-cmp/cmp"
 )
 
 const sharedData = `

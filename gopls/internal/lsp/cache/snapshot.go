@@ -27,7 +27,6 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"golang.org/x/sync/errgroup"
 	"github.com/goki/go-tools/go/packages"
 	"github.com/goki/go-tools/go/types/objectpath"
 	"github.com/goki/go-tools/gopls/internal/bug"
@@ -46,6 +45,7 @@ import (
 	"github.com/goki/go-tools/internal/packagesinternal"
 	"github.com/goki/go-tools/internal/persistent"
 	"github.com/goki/go-tools/internal/typesinternal"
+	"golang.org/x/sync/errgroup"
 )
 
 type snapshot struct {

@@ -22,10 +22,10 @@ import (
 	"sync"
 	"unicode"
 
-	exec "golang.org/x/sys/execabs"
 	"github.com/goki/go-tools/go/internal/packagesdriver"
 	"github.com/goki/go-tools/internal/gocommand"
 	"github.com/goki/go-tools/internal/packagesinternal"
+	exec "golang.org/x/sys/execabs"
 )
 
 // debug controls verbose logging.

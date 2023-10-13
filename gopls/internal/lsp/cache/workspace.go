@@ -14,9 +14,9 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/mod/modfile"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
 	"github.com/goki/go-tools/gopls/internal/span"
+	"golang.org/x/mod/modfile"
 )
 
 // TODO(rfindley): now that experimentalWorkspaceModule is gone, this file can

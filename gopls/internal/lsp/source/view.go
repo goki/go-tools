@@ -18,7 +18,6 @@ import (
 	"go/types"
 	"io"
 
-	"golang.org/x/mod/modfile"
 	"github.com/goki/go-tools/go/analysis"
 	"github.com/goki/go-tools/go/packages"
 	"github.com/goki/go-tools/go/types/objectpath"
@@ -33,6 +32,7 @@ import (
 	"github.com/goki/go-tools/internal/gocommand"
 	"github.com/goki/go-tools/internal/imports"
 	"github.com/goki/go-tools/internal/packagesinternal"
+	"golang.org/x/mod/modfile"
 )
 
 // A GlobalSnapshotID uniquely identifies a snapshot within this process and

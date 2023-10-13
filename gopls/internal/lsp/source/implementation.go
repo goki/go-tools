@@ -16,12 +16,12 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/sync/errgroup"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/safetoken"
 	"github.com/goki/go-tools/gopls/internal/lsp/source/methodsets"
 	"github.com/goki/go-tools/gopls/internal/span"
 	"github.com/goki/go-tools/internal/event"
+	"golang.org/x/sync/errgroup"
 )
 
 // This file defines the new implementation of the 'implementation'

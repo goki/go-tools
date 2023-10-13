@@ -8,11 +8,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/lsp"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
 	"github.com/goki/go-tools/internal/typeparams"
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestBadURICrash_VSCodeIssue1498(t *testing.T) {

@@ -19,8 +19,6 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"golang.org/x/mod/module"
-	"golang.org/x/sync/errgroup"
 	"github.com/goki/go-tools/go/ast/astutil"
 	"github.com/goki/go-tools/gopls/internal/bug"
 	"github.com/goki/go-tools/gopls/internal/lsp/filecache"
@@ -35,6 +33,8 @@ import (
 	"github.com/goki/go-tools/internal/tokeninternal"
 	"github.com/goki/go-tools/internal/typeparams"
 	"github.com/goki/go-tools/internal/typesinternal"
+	"golang.org/x/mod/module"
+	"golang.org/x/sync/errgroup"
 )
 
 // Various optimizations that should not affect correctness.

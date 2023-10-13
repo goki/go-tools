@@ -20,7 +20,6 @@ import (
 	"errors"
 	"go/parser"
 	"go/token"
-	exec "golang.org/x/sys/execabs"
 	"io"
 	"io/ioutil"
 	"log"
@@ -34,8 +33,10 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"golang.org/x/net/websocket"
+	exec "golang.org/x/sys/execabs"
+
 	"github.com/goki/go-tools/txtar"
+	"golang.org/x/net/websocket"
 )
 
 // RunScripts specifies whether the socket handler should execute shell scripts

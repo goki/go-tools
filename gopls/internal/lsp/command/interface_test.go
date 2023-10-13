@@ -8,9 +8,9 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/lsp/command/gen"
 	"github.com/goki/go-tools/internal/testenv"
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestGenerated(t *testing.T) {

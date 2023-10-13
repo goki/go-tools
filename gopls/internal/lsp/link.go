@@ -15,12 +15,12 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/mod/modfile"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/safetoken"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
 	"github.com/goki/go-tools/internal/event"
 	"github.com/goki/go-tools/internal/event/tag"
+	"golang.org/x/mod/modfile"
 )
 
 func (s *Server) documentLink(ctx context.Context, params *protocol.DocumentLinkParams) (links []protocol.DocumentLink, err error) {

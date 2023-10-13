@@ -4,6 +4,7 @@
 
 // This file contains tests for the atomic alignment checker.
 
+//go:build arm || 386
 // +build arm 386
 
 package testdata

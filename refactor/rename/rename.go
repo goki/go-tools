@@ -17,7 +17,6 @@ import (
 	"go/parser"
 	"go/token"
 	"go/types"
-	exec "golang.org/x/sys/execabs"
 	"io"
 	"io/ioutil"
 	"log"
@@ -27,6 +26,8 @@ import (
 	"sort"
 	"strconv"
 	"strings"
+
+	exec "golang.org/x/sys/execabs"
 
 	"github.com/goki/go-tools/go/loader"
 	"github.com/goki/go-tools/go/types/typeutil"

@@ -37,7 +37,6 @@ import (
 	"strings"
 	"testing"
 
-	exec "golang.org/x/sys/execabs"
 	"github.com/goki/go-tools/gopls/internal/bug"
 	"github.com/goki/go-tools/gopls/internal/hooks"
 	"github.com/goki/go-tools/gopls/internal/lsp/cmd"
@@ -46,6 +45,7 @@ import (
 	"github.com/goki/go-tools/internal/testenv"
 	"github.com/goki/go-tools/internal/tool"
 	"github.com/goki/go-tools/txtar"
+	exec "golang.org/x/sys/execabs"
 )
 
 // TestVersion tests the 'version' subcommand (../info.go).

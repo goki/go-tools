@@ -18,7 +18,6 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	exec "golang.org/x/sys/execabs"
 	"io"
 	"log"
 	"net/http"
@@ -27,6 +26,8 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+
+	exec "golang.org/x/sys/execabs"
 )
 
 var v = flag.Bool("v", false, "if true, log GOAUTH responses to stderr")

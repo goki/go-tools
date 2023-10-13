@@ -7,9 +7,9 @@ package misc
 import (
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	. "github.com/goki/go-tools/gopls/internal/lsp/regtest"
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestSignatureHelpInNonWorkspacePackage(t *testing.T) {

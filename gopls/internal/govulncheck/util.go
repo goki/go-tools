@@ -8,8 +8,8 @@
 package govulncheck
 
 import (
-	"golang.org/x/mod/semver"
 	isem "github.com/goki/go-tools/gopls/internal/govulncheck/semver"
+	"golang.org/x/mod/semver"
 	"golang.org/x/vuln/osv"
 )
 

@@ -19,12 +19,12 @@ import (
 	"sync"
 	"testing"
 
-	"golang.org/x/mod/module"
 	"github.com/goki/go-tools/internal/gocommand"
 	"github.com/goki/go-tools/internal/gopathwalk"
 	"github.com/goki/go-tools/internal/proxydir"
 	"github.com/goki/go-tools/internal/testenv"
 	"github.com/goki/go-tools/txtar"
+	"golang.org/x/mod/module"
 )
 
 // Tests that we can find packages in the stdlib.

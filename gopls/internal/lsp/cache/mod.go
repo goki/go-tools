@@ -12,8 +12,6 @@ import (
 	"regexp"
 	"strings"
 
-	"golang.org/x/mod/modfile"
-	"golang.org/x/mod/module"
 	"github.com/goki/go-tools/gopls/internal/lsp/command"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
@@ -22,6 +20,8 @@ import (
 	"github.com/goki/go-tools/internal/event/tag"
 	"github.com/goki/go-tools/internal/gocommand"
 	"github.com/goki/go-tools/internal/memoize"
+	"golang.org/x/mod/modfile"
+	"golang.org/x/mod/module"
 )
 
 // ParseMod parses a go.mod file, using a cache. It may return partial results and an error.

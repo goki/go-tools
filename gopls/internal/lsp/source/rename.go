@@ -55,7 +55,6 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/mod/modfile"
 	"github.com/goki/go-tools/go/ast/astutil"
 	"github.com/goki/go-tools/go/types/objectpath"
 	"github.com/goki/go-tools/go/types/typeutil"
@@ -67,6 +66,7 @@ import (
 	"github.com/goki/go-tools/internal/event"
 	"github.com/goki/go-tools/internal/typeparams"
 	"github.com/goki/go-tools/refactor/satisfy"
+	"golang.org/x/mod/modfile"
 )
 
 // A renamer holds state of a single call to renameObj, which renames

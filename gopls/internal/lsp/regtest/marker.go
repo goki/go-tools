@@ -23,7 +23,6 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/go/expect"
 	"github.com/goki/go-tools/gopls/internal/hooks"
 	"github.com/goki/go-tools/gopls/internal/lsp/cache"
@@ -39,6 +38,7 @@ import (
 	"github.com/goki/go-tools/internal/jsonrpc2/servertest"
 	"github.com/goki/go-tools/internal/testenv"
 	"github.com/goki/go-tools/txtar"
+	"github.com/google/go-cmp/cmp"
 )
 
 var update = flag.Bool("update", false, "if set, update test data during marker tests")

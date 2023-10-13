@@ -19,7 +19,6 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"golang.org/x/text/unicode/runenames"
 	"github.com/goki/go-tools/go/ast/astutil"
 	"github.com/goki/go-tools/go/types/typeutil"
 	"github.com/goki/go-tools/gopls/internal/bug"
@@ -29,6 +28,7 @@ import (
 	"github.com/goki/go-tools/internal/event"
 	"github.com/goki/go-tools/internal/tokeninternal"
 	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/text/unicode/runenames"
 )
 
 // HoverJSON contains information used by hover. It is also the JSON returned

@@ -17,8 +17,8 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/lsp/source"
+	"github.com/google/go-cmp/cmp"
 )
 
 const usage = `api-diff <previous version> [<current version>]

@@ -14,10 +14,10 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/sync/errgroup"
 	"github.com/goki/go-tools/go/packages"
 	"github.com/goki/go-tools/internal/gcimporter"
 	"github.com/goki/go-tools/internal/testenv"
+	"golang.org/x/sync/errgroup"
 )
 
 // TestStd type-checks the standard library using shallow export data.

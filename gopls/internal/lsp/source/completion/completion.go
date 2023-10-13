@@ -25,7 +25,6 @@ import (
 	"time"
 	"unicode"
 
-	"golang.org/x/sync/errgroup"
 	"github.com/goki/go-tools/go/ast/astutil"
 	goplsastutil "github.com/goki/go-tools/gopls/internal/astutil"
 	"github.com/goki/go-tools/gopls/internal/lsp/protocol"
@@ -37,6 +36,7 @@ import (
 	"github.com/goki/go-tools/internal/fuzzy"
 	"github.com/goki/go-tools/internal/imports"
 	"github.com/goki/go-tools/internal/typeparams"
+	"golang.org/x/sync/errgroup"
 )
 
 // A CompletionItem represents a possible completion suggested by the algorithm.

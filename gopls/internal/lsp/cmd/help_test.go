@@ -12,10 +12,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
 	"github.com/goki/go-tools/gopls/internal/lsp/cmd"
 	"github.com/goki/go-tools/internal/testenv"
 	"github.com/goki/go-tools/internal/tool"
+	"github.com/google/go-cmp/cmp"
 )
 
 //go:generate go test -run Help -update-help-files
