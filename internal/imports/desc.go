@@ -7,6 +7,7 @@ package imports
 import (
 	"go/ast"
 	"go/token"
+	"os"
 	"reflect"
 	"strings"
 )
@@ -33,10 +34,26 @@ func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *Pro
 				if field.Tag == nil {
 					continue
 				}
+
 				// need to get rid of backquotes around tag value
 				tv := strings.TrimPrefix(field.Tag.Value, "`")
 				tv = strings.TrimSuffix(tv, "`")
 				rst := reflect.StructTag(tv)
+
+				// TODO: remove this TEMPORARY fix to only run this on the new goki repos
+				d, _ := os.Getwd()
+				if strings.Contains(d, "goki") {
+					// get rid of the desc tags
+					tv = strings.ReplaceAll(tv, `desc:"`+rst.Get("desc")+`"`, "")
+					tv = strings.TrimSuffix(tv, " ")
+					if tv == "" {
+						field.Tag.Value = ""
+					} else {
+						field.Tag.Value = "`" + tv + "`"
+					}
+					continue
+				}
+
 				comment := structTagStrings(rst, "def", "view", "viewif", "tableview", "min", "max", "step") + rst.Get("desc")
 				if comment != "" {
 					if field.Doc == nil {
