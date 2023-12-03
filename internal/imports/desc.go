@@ -7,7 +7,6 @@ package imports
 import (
 	"go/ast"
 	"go/token"
-	"os"
 	"reflect"
 	"regexp"
 	"strings"
@@ -43,30 +42,26 @@ func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *Pro
 				tv = strings.TrimSuffix(tv, "`")
 				rst := reflect.StructTag(tv)
 
-				// TODO: remove this TEMPORARY fix to only run this on the new goki repos
-				d, _ := os.Getwd()
-				if strings.Contains(d, "goki") {
-					// get rid of the desc tags
-					tv = strings.ReplaceAll(tv, `desc:"`+rst.Get("desc")+`"`, "")
-					tv = strings.TrimSuffix(tv, " ")
-					if tv == "" {
-						field.Tag.Value = ""
-					} else {
-						field.Tag.Value = "`" + tv + "`"
-					}
+				// get rid of the desc tags
+				tv = strings.ReplaceAll(tv, `desc:"`+rst.Get("desc")+`"`, "")
+				tv = strings.TrimSuffix(tv, " ")
+				if tv == "" {
+					field.Tag.Value = ""
+				} else {
+					field.Tag.Value = "`" + tv + "`"
+				}
 
-					if field.Doc == nil {
-						continue
-					}
-					for _, c := range field.Doc.List {
-						c.Text = metadataRegexp.ReplaceAllString(c.Text, "")
-					}
-					if cm[field] == nil {
-						cm[field] = make([]*ast.CommentGroup, 1)
-					}
-					cm[field][len(cm[field])-1] = field.Doc
+				if field.Doc == nil {
 					continue
 				}
+				for _, c := range field.Doc.List {
+					c.Text = metadataRegexp.ReplaceAllString(c.Text, "")
+				}
+				if cm[field] == nil {
+					cm[field] = make([]*ast.CommentGroup, 1)
+				}
+				cm[field][len(cm[field])-1] = field.Doc
+				continue
 
 				comment := structTagStrings(rst, "def", "view", "viewif", "tableview", "min", "max", "step") + rst.Get("desc")
 				if comment != "" {
