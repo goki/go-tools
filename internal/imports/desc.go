@@ -51,19 +51,19 @@ func addDescComments(fset *token.FileSet, f *ast.File, filename string, env *Pro
 					field.Tag.Value = "`" + tv + "`"
 				}
 
-				if field.Doc == nil {
-					continue
-				}
-				for _, c := range field.Doc.List {
-					c.Text = metadataRegexp.ReplaceAllString(c.Text, "")
-				}
-				if cm[field] == nil {
-					cm[field] = make([]*ast.CommentGroup, 1)
-				}
-				cm[field][len(cm[field])-1] = field.Doc
-				continue
+				// if field.Doc == nil {
+				// 	continue
+				// }
+				// for _, c := range field.Doc.List {
+				// 	c.Text = metadataRegexp.ReplaceAllString(c.Text, "")
+				// }
+				// if cm[field] == nil {
+				// 	cm[field] = make([]*ast.CommentGroup, 1)
+				// }
+				// cm[field][len(cm[field])-1] = field.Doc
+				// continue
 
-				comment := structTagStrings(rst, "def", "view", "viewif", "tableview", "min", "max", "step") + rst.Get("desc")
+				comment := rst.Get("desc")
 				if comment != "" {
 					if field.Doc == nil {
 						field.Doc = &ast.CommentGroup{}
